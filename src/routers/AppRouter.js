@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { AboutScreen } from "../components/about/AboutScreem";
+import { AboutScreen } from "../components/about/AboutScreen";
 import { ApisScreen } from "../components/apis/ApisScreen";
 import { AppsScreen } from "../components/apps/AppsScreen";
 import { BlogsScreen } from "../components/blogs/BlogsScreen";

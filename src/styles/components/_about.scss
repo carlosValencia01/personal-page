@@ -1,0 +1,33 @@
+.about__main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.about__container {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.about__title {
+  color: $light-grey;
+  font-weight: bold;
+}
+
+.about__text {
+  color: $light-grey;
+
+  font-size: large;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+.about__image {
+  border-radius: 50%;
+  width: 23%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

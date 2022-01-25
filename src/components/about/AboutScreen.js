@@ -1,0 +1,42 @@
+import React from "react";
+import background from "../../assets/images/background1.jpg";
+
+export const AboutScreen = () => {
+  return (
+    <div
+      className="about__main"
+      style={{
+        background: `url(${background})`,
+      }}
+    >
+      <div className="about__container">
+        <h2 className="about__title animate__animated animate__slideInLeft animate__faster">
+          About Me
+        </h2>
+        <p className="about__text animate__animated animate__pulse">
+          I am a Systems Engineer graduated from the Technological Institute of
+          Tepic. I have some experience in web development with Angular and
+          React and also Node, my favorite language is JavaScript I am
+          interested in web design and development. My hobbies are learning new
+          development technologies throg books and online courses, I like music
+          and Formula 1.
+        </p>
+        <img
+          className="about__image animate__animated animate__fadeIn"
+          src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t1.6435-1/p320x320/206496083_5679757305428995_4003551224054664991_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHQM6XPs8giigwVrzdSu0nsYQbOFwvj_XxhBs4XC-P9fLl4qCZCBrHwdjP1qnf5x6BBf7eHqc0XSeUw1wec0R4Z&_nc_ohc=IaJx7ll34C0AX9-TKCW&_nc_ht=scontent.ftpq1-1.fna&oh=00_AT9uCLR8W4dyQUtav_WTSp8OjWBCgLpnVLibKEuwoQPO6Q&oe=6213FCC2"
+          alt="image"
+        />
+        <hr />
+        <h2 className="about__title animate__animated animate__slideInLeft animate__faster">
+          About This Page
+        </h2>
+        <p className="about__text animate__animated animate__pulse">
+          This page was created as a tool to share my knowledge, some
+          interesting information for other developers throg tutorials and blogs
+          and also share documentation of my projects and API`s.
+        </p>
+        <br />
+      </div>
+    </div>
+  );
+};
