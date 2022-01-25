@@ -13,6 +13,7 @@
   justify-content: left;
   align-items: center;
   position: relative;
+  padding-left: 5px;
 }
 
 .navbar__item {
@@ -20,10 +21,20 @@
   margin-right: 20px;
   font-size: 20px;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     color: darken($color: $light-grey, $amount: 30);
     animation: color 0.3sec ease;
+  }
+}
+
+.navbar__active {
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    color: white;
   }
 }
 
