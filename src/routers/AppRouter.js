@@ -7,8 +7,6 @@ import { BlogsScreen } from "../components/blogs/BlogsScreen";
 import { HomeScreen } from "../components/home/HomeScreen";
 import { NavBar } from "../components/shared/NavBar";
 
-import { TestPage } from "../components/TestPage";
-
 export const AppRouter = () => {
   return (
     <>
