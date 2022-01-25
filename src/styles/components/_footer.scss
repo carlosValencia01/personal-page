@@ -4,5 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__content {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
