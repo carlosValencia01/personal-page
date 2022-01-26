@@ -18,7 +18,7 @@ export const AppRouter = () => {
           <Route path="/apps" element={<AppsScreen />} />
           <Route path="/apis" element={<ApisScreen />} />
           <Route path="/about" element={<AboutScreen />} />
-          <Route path="*" element={<HomeScreen />} />
+          <Route path="*" element={<AboutScreen />} />
         </Routes>
       </BrowserRouter>
     </>
