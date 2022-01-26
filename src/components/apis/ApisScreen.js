@@ -1,5 +1,4 @@
 import React from "react";
-import { BuildingScreen } from "../BuildingScreen";
 import { Card } from "../shared/Card";
 import imagen from "../../assets/images/background1.jpg";
 
@@ -27,7 +26,6 @@ export const ApisScreen = () => {
     <div>
       <h2>Apis home screen</h2>
       <hr />
-
       {entries.map((entry) => (
         <Card key={entry.id} {...entry} />
       ))}

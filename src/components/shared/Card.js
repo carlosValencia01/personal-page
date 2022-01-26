@@ -10,9 +10,9 @@ export const Card = ({ title, img, description, date, route }) => {
         <p>
           <small>{date}</small>
         </p>
-        <a href="#" className="btn btn-primary">
+        {/* <a href="#" className="btn btn-primary">
           Go somewhere
-        </a>
+        </a> */}
       </div>
     </div>
   );
