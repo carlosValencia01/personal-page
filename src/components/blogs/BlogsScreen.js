@@ -1,12 +1,12 @@
 import React from "react";
-import { BuildingScreen } from "../BuildingScreen";
+import { BlogsList } from "./BlogsList";
 
 export const BlogsScreen = () => {
   return (
     <div>
       <h2>Blogs home screen</h2>
       <hr />
-      <BuildingScreen />
+      <BlogsList />
     </div>
   );
 };
