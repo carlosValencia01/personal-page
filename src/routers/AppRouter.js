@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AboutScreen } from "../components/about/AboutScreen";
 import { ApisScreen } from "../components/apis/ApisScreen";
 import { AppsScreen } from "../components/apps/AppsScreen";
-import { BigData } from "../components/blogs/blogsEntries/BigData";
 import { BlogsScreen } from "../components/blogs/BlogsScreen";
 import { HomeScreen } from "../components/home/HomeScreen";
 import { NavBar } from "../components/shared/NavBar";
