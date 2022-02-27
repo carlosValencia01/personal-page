@@ -9,14 +9,12 @@ export const BookForm = () => {
     publisher: "",
   };
   const [values, setValues] = useState(initialState);
-  const [cita, setCita] = useState("");
 
   const { author, year, title, place, publisher } = values;
 
   const reset = (e) => {
     e.preventDefault();
     setValues(initialState);
-    setCita("");
   };
 
   const handleInputChange = ({ target }) => {
@@ -27,9 +25,7 @@ export const BookForm = () => {
   };
 
   const handleQuote = () => {
-    //autores. (2022). titulo del libro. mexico: editorial.
     isFormValid();
-    setCita(`${author}. (${year}). ${title}. ${place}: ${publisher}`);
   };
 
   const isFormValid = () => {
@@ -55,7 +51,7 @@ export const BookForm = () => {
           <input
             className="form__input"
             type="text"
-            placeholder="Fernandez. J"
+            placeholder="Kats, I., Gbayan, K., & Aghajan, H"
             name="author"
             autoComplete="off"
             value={author}
@@ -117,7 +113,9 @@ export const BookForm = () => {
       {isFormValid() ? (
         <div>
           <p>La ficha bibliográfica es :</p>
-          <p>{cita}</p>
+          <p>
+            {author}. ({year}). <i>{title}</i>. {place}: {publisher}
+          </p>
         </div>
       ) : (
         <div>
