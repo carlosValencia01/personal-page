@@ -2,10 +2,10 @@ import React from "react";
 
 export const Nft = () => {
   return (
-    <div className="blogs__main_container">
-      <article className="blog_main_article">
-        <h1 className="blogs__title">NFT, ¿Qué es y cómo funciona?</h1>
-        <em className="blogs__date">15/02/2022</em>
+    <div className="blog__main_container">
+      <article className="blog__main_article">
+        <h1 className="blog__title">NFT, ¿Qué es y cómo funciona?</h1>
+        <em className="blog__date">15/02/2022</em>
         <hr />
         <p className="blog__text">
           En los últimos meses el termino NFT se ha puesto de moda debido a
@@ -16,7 +16,7 @@ export const Nft = () => {
           explicar que es un NFT y porque simplemente tomar una captura de
           pantalla no te hace dueño de este.
         </p>
-        <h2 className="blogs__subtitle">¿Qué es?</h2>
+        <h2 className="blog__subtitle">¿Qué es?</h2>
 
         <p className="blog__text">
           Las siglas de NFT significan <strong>Non-Fungible Token</strong>, un
@@ -28,7 +28,7 @@ export const Nft = () => {
           una cadena de bloques, que se utiliza para registrar la propiedad de
           un activo como una obra de arte o un objeto de colección”.
         </p>
-        <h2 className="blogs__subtitle">¿Cómo funciona?</h2>
+        <h2 className="blog__subtitle">¿Cómo funciona?</h2>
         <p className="blog__text">
           Los NFT funcionan a través de la tecnología blockchain o de cadena de
           bloques. Es la misma tecnología de las criptomonedas, que funcionan
@@ -41,14 +41,14 @@ export const Nft = () => {
           réplicas. Este registro contiene los datos del propietario y del
           creador, lo que permite preservar por igual los derechos de autor.
         </p>
-        <h3 className="blog_subtitle">En resumen</h3>
+        <h3 className="blog__subtitle">En resumen</h3>
         <p className="blog__text">
           Un NFT puede ser una imagen, un gráfico, un vídeo, música o cualquier
           otro contenido de carácter digital sobre el que alguien quiera tener
           posesión.
         </p>
         <img
-          className="blogs__main_image"
+          className="blog__main_image"
           src="https://live.staticflickr.com/65535/51884255769_770184740a_b.jpg"
           alt="nft-"
         />

@@ -1,8 +1,17 @@
 /* 
-Categories=blog, app, doc, tutorial
+Categories=blog, app, doc, tutorial,other
 */
 
 export const entriesList = [
+  {
+    id: "4",
+    title: "Citar en APA",
+    img: "https://live.staticflickr.com/65535/51902469364_c8864c8e3a_c.jpg",
+    description: "Aplicacion para citar en formato APA",
+    date: "24-02-2022",
+    route: "/apps/apa",
+    category: "app",
+  },
   {
     id: "2",
     title: "NFT ¿Que es y como funciona?",
@@ -22,8 +31,25 @@ export const entriesList = [
     route: "/blogs/que-es-big-data",
     category: "blog",
   },
+  {
+    id: "3",
+    title: "About",
+    img: "https://live.staticflickr.com/65535/51902190659_7f48b2bd6d_c.jpg",
+    description: "Acerca de esta página",
+    date: "5-01-2022",
+    route: "/about",
+    category: "other",
+  },
 ];
 
 export const getBlogs = () => {
   return entriesList.filter((entry) => entry.category === "blog");
+};
+
+export const getApps = () => {
+  return entriesList.filter((entry) => entry.category === "app");
+};
+
+export const getAll = () => {
+  return entriesList;
 };

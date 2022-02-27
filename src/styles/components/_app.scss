@@ -1,0 +1,32 @@
+.app__main_container {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 3rem;
+  @media screen and(min-width: 640px) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  @media screen and(min-width: 640px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media screen and(min-width: 1024px) {
+    max-width: 80rem;
+  }
+  @media screen and(min-width: 1024px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  background-color: white;
+}
+
+.app__main_article {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

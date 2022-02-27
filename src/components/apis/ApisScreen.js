@@ -1,34 +1,15 @@
 import React from "react";
-import { Card } from "../shared/Card";
-import imagen from "../../assets/images/background1.jpg";
 
 export const ApisScreen = () => {
-  const entries = [
-    {
-      id: "1",
-      title: "F1 API",
-      img: imagen,
-      description: "API about F1 interesting data",
-      date: "25-01-2022",
-      route: "no-route-yet",
-    },
-    {
-      id: "2",
-      title: "The Office API",
-      img: imagen,
-      description: "API about characters and phrases of the office.",
-      date: "30-01-2022",
-      route: "no-route-yet",
-    },
-  ];
-
   return (
-    <div>
-      <h2>Apis home screen</h2>
+    <div className="list__main">
+      <h1>There is no Apis yet</h1>
       <hr />
-      {entries.map((entry) => (
-        <Card key={entry.id} {...entry} />
-      ))}
+      <img
+        className="shared__main_image"
+        src="https://live.staticflickr.com/65535/51901859226_aac92a27c9_c.jpg"
+        alt="under-construction"
+      />
     </div>
   );
 };
