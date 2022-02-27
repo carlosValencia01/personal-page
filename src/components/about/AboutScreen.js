@@ -23,7 +23,7 @@ export const AboutScreen = () => {
         </p>
         <img
           className="about__image animate__animated animate__fadeIn"
-          src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t1.6435-1/p320x320/206496083_5679757305428995_4003551224054664991_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHQM6XPs8giigwVrzdSu0nsYQbOFwvj_XxhBs4XC-P9fLl4qCZCBrHwdjP1qnf5x6BBf7eHqc0XSeUw1wec0R4Z&_nc_ohc=IaJx7ll34C0AX9-TKCW&_nc_ht=scontent.ftpq1-1.fna&oh=00_AT9uCLR8W4dyQUtav_WTSp8OjWBCgLpnVLibKEuwoQPO6Q&oe=6213FCC2"
+          src="https://live.staticflickr.com/65535/51907203687_9616b4f39d_c.jpg"
           alt="profile-pic"
         />
         <hr />
