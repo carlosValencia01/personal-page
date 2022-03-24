@@ -1,12 +1,20 @@
 /* 
 Categories=blog, app, doc, tutorial,other
 */
-// https://pokedex-carlos-valencia.vercel.app/
 export const entriesList = [
+  {
+    id: "6",
+    title: "Recipes App",
+    img: "https://live.staticflickr.com/65535/51957806642_944f49fc30_c.jpg",
+    description:
+      "Aplicacion realizada en React para compartir y consultar recetas de cocina",
+    date: "24-03-2022",
+    route: "https://recipes-carlos.netlify.app/",
+    category: "app",
+  },
   {
     id: "5",
     title: "Pokedex",
-    // <a data-flickr-embed="true" href="https://www.flickr.com/photos/195005799@N05/51939040565/in/dateposted-public/" title="pokemon"><img src="" width="800" height="420" alt="pokemon"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     img: "https://live.staticflickr.com/65535/51939040565_af3d21cda0_c.jpg",
     description: "Aplicacion realizada en Next.Js",
     date: "14-03-2022",
