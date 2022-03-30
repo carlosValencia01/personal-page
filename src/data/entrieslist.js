@@ -3,6 +3,15 @@ Categories=blog, app, doc, tutorial,other
 */
 export const entriesList = [
   {
+    id: "7",
+    title: "Meme Generator",
+    img: "https://live.staticflickr.com/65535/51969713338_9708f7b77f_c.jpg",
+    description: "Aplicacion para generar memes",
+    date: "29-03-2022",
+    route: "/apps/meme-generator",
+    category: "app",
+  },
+  {
     id: "6",
     title: "Recipes App",
     img: "https://live.staticflickr.com/65535/51957806642_944f49fc30_c.jpg",

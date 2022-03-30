@@ -1,0 +1,60 @@
+.myBody {
+  background-color: rgb(182 182 182);
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.form {
+  background-color: rgb(200 200 200);
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.meme {
+  position: relative;
+  text-align: center;
+  width: 45%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  float: right;
+}
+
+.meme img {
+  width: 100%;
+}
+
+.meme span {
+  width: 100%;
+  left: 0px;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000,
+    0 -2px 0 rgb(255 250 250), 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+.watter-mark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 8px;
+  color: white;
+  text-shadow: 2px 0 0 #000;
+}
+
+.topText {
+  position: absolute;
+}
+
+.bottomText {
+  position: absolute;
+  bottom: 15px;
+}
