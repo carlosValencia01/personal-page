@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 import { Footer } from "./components/shared/Footer";
 import { AppRouter } from "./routers/AppRouter";
@@ -8,8 +8,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
-  const [themeMode, setThemeMode] = useState("dark");
-  const prefersDarkMode = useMediaQuery(`(prefers-color-scheme: ${themeMode})`);
+  // const [themeMode, setThemeMode] = useState("dark");
+  const prefersDarkMode = useMediaQuery(`(prefers-color-scheme: dark)`);
 
   const theme = React.useMemo(
     () =>

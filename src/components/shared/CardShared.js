@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions, Paper } from "@mui/material";
+import { Button, CardActionArea, CardActions } from "@mui/material";
 
 // export const Card = ({ title, img, description, date, route }) => {
 //   return (
