@@ -21,13 +21,13 @@ function App() {
     [prefersDarkMode]
   );
 
-  const toggleTheme = () => {
-    if (themeMode === "dark") {
-      setThemeMode("light");
-    } else {
-      setThemeMode("dark");
-    }
-  };
+  // const toggleTheme = () => {
+  //   if (themeMode === "dark") {
+  //     setThemeMode("light");
+  //   } else {
+  //     setThemeMode("dark");
+  //   }
+  // };
 
   return (
     <>
