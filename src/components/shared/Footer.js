@@ -8,3 +8,4 @@ export const Footer = () => {
     </footer>
   );
 };
+// TOTO: Add links to linkedin and mail

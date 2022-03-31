@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../shared/Card";
+import { CardShared } from "../shared/CardShared";
 import { getBlogs } from "../../data/entrieslist";
 
 export const BlogsList = () => {
@@ -9,7 +9,7 @@ export const BlogsList = () => {
     <div className="list__main">
       <div className="list__grid">
         {entries.map((entry) => (
-          <Card key={entry.id} {...entry} />
+          <CardShared key={entry.id} {...entry} />
         ))}
       </div>
     </div>

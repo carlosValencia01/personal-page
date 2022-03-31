@@ -1,6 +1,6 @@
-import React from "react";
 import { getAll } from "../../data/entrieslist";
-import { Card } from "../shared/Card";
+
+import { CardShared } from "../shared/CardShared";
 
 export const HomeScreen = () => {
   const entries = getAll();
@@ -8,7 +8,7 @@ export const HomeScreen = () => {
     <div className="list__main">
       <div className="list__grid">
         {entries.map((entry) => (
-          <Card key={entry.id} {...entry} />
+          <CardShared key={entry.id} {...entry} />
         ))}
       </div>
     </div>
