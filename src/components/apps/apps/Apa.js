@@ -41,7 +41,6 @@ export const Apa = () => {
         {source === "book" && <BookForm />}
         {source === "magazine" && <MagazineForm />}
         {source === "news" && <NewsForm />}
-        {/* TODO: pendientes */}
         {source === "enciclopedy" && <EnciclopedyForm />}
         {source === "book-article" && <BookArticleForm />}
         {source === "web" && <WebForm />}

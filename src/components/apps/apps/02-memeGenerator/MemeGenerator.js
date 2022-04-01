@@ -1,5 +1,12 @@
 import { useState } from "react";
 import html2canvas from "html2canvas";
+import * as React from "react";
+import MenuItem from "@mui/material/MenuItem";
+import { FormControl, Typography } from "@mui/material";
+import { Select } from "@mui/material";
+import Button from "@mui/material/Button";
+import { TextField } from "@mui/material";
+
 import "./style.css";
 import aliens from "../../../../assets/memes/aliens.jpg";
 import fire from "../../../../assets/memes/fire.jpg";
@@ -8,6 +15,7 @@ import matrix from "../../../../assets/memes/matrix.jpg";
 import philosoraptor from "../../../../assets/memes/philosoraptor.jpg";
 import smart from "../../../../assets/memes/smart.jpg";
 import frog from "../../../../assets/memes/frog.jpg";
+//
 
 export const MemeGenerator = () => {
   const [topText, setTopText] = useState("");
@@ -41,67 +49,79 @@ export const MemeGenerator = () => {
   };
 
   return (
-    <div className="myBody">
-      <h1 className="mt-3 mb-5">
-        <strong>MemeGenerator</strong>
-      </h1>
-      <div className="form">
-        <select
-          onChange={onChangeImage}
-          className="form-select form-select-lg mb-3 mt-4"
+    <>
+      <div className="myBody">
+        <Typography
+          variant="h3"
+          gutterBottom
+          component="div"
+          className="mt-5 mb-5"
         >
-          <option hidden defaultValue="">
-            Seleccione una plantilla
-          </option>
-          <option value={smart}>Smart Guy</option>
-          <option value={frog}>Sad frog</option>
-          <option value={philosoraptor}>Philosoraptor</option>
-          <option value={matrix}>Matrix</option>
-          <option value={aliens}>Aliens</option>
-          <option value={futurama}>Futurama</option>
-          <option value={fire}>Casa en llamas</option>
-        </select>
+          Meme Generator
+        </Typography>
+        <div className="form">
+          <FormControl fullWidth sx={{ m: 1, minWidth: 120 }} className="mt-3">
+            <Select
+              value={image}
+              onChange={onChangeImage}
+              displayEmpty
+              inputProps={{ "aria-label": "Without label" }}
+            >
+              <MenuItem value="">
+                <em>None</em>
+              </MenuItem>
+              <MenuItem value={smart}>Smart Guy</MenuItem>
+              <MenuItem value={frog}>Sad frog</MenuItem>
+              <MenuItem value={philosoraptor}>Philosoraptor</MenuItem>
+              <MenuItem value={matrix}>Matrix</MenuItem>
+              <MenuItem value={aliens}>Aliens</MenuItem>
+              <MenuItem value={futurama}>Futurama</MenuItem>
+              <MenuItem value={fire}>Casa en llamas</MenuItem>
+            </Select>
+          </FormControl>
 
-        <input
-          className="form-control"
-          type="text"
-          placeholder="Top text"
-          name="topText"
-          autoComplete="off"
-          value={topText}
-          onChange={handleTopTextChange}
-        />
+          <TextField
+            className="textField mt-4"
+            label="Top Text"
+            type="text"
+            variant="standard"
+            name="topText"
+            onChange={handleTopTextChange}
+          />
+          <br />
 
-        <input
-          className="form-control mt-3"
-          type="text"
-          placeholder="Bottom text"
-          name="bottomText"
-          autoComplete="off"
-          value={bottomText}
-          onChange={handleBottomTextChange}
-        />
+          <TextField
+            className="textField mt-4"
+            label="Bottom Text"
+            type="text"
+            variant="standard"
+            name="bottomText"
+            onChange={handleBottomTextChange}
+          />
+          <br />
 
-        <button
-          onClick={onClickExport}
-          className="btn btn-primary btn-lg mt-3 mb-3"
-        >
-          Exportar Imagen
-        </button>
+          <Button
+            variant="outlined"
+            onClick={onClickExport}
+            className="mt-5 mb-3 pt-3 pb-2 ps-5 pe-5"
+          >
+            Exportar Imagen
+          </Button>
+        </div>
+
+        <div className="meme" id="meme">
+          {image !== "" && (
+            <>
+              <img src={`${image}`} alt="meme" />
+              <span className="topText">{topText}</span>
+              <span className="bottomText">{bottomText}</span>
+              <p className="watter-mark">
+                https://carlosvalencia-dev.netlify.app/apps/meme-generator
+              </p>
+            </>
+          )}
+        </div>
       </div>
-
-      <div className="meme" id="meme">
-        {image !== "" && (
-          <>
-            <img src={`${image}`} alt="meme" />
-            <span className="topText">{topText}</span>
-            <span className="bottomText">{bottomText}</span>
-            <p className="watter-mark">
-              https://carlosvalencia-dev.netlify.app/apps/meme-generator
-            </p>
-          </>
-        )}
-      </div>
-    </div>
+    </>
   );
 };
