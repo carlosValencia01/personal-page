@@ -68,7 +68,7 @@ export const MemeGenerator = () => {
               inputProps={{ "aria-label": "Without label" }}
             >
               <MenuItem value="">
-                <em>None</em>
+                <em>Seleccione una plantilla</em>
               </MenuItem>
               <MenuItem value={smart}>Smart Guy</MenuItem>
               <MenuItem value={frog}>Sad frog</MenuItem>
