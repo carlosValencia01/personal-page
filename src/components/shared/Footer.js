@@ -1,4 +1,4 @@
-// import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { IconButton } from "@mui/material";
@@ -17,6 +17,7 @@ export const Footer = () => {
         >
           <LinkedInIcon fontSize="inherit" />
         </IconButton>
+
         <IconButton
           aria-label="delete"
           size="large"
@@ -24,9 +25,14 @@ export const Footer = () => {
         >
           <GitHubIcon fontSize="inherit" />
         </IconButton>
-        {/* <IconButton aria-label="delete" size="large">
+
+        <IconButton
+          aria-label="delete"
+          size="large"
+          href="mailto:jocavalenciava@ittepic.edu.mx?Subject=Contact%20from%20web%20page"
+        >
           <MailOutlineIcon fontSize="inherit" />
-        </IconButton> */}
+        </IconButton>
       </div>
     </footer>
   );
