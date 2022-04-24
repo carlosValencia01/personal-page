@@ -15,6 +15,7 @@ import matrix from "../../../../assets/memes/matrix.jpg";
 import philosoraptor from "../../../../assets/memes/philosoraptor.jpg";
 import smart from "../../../../assets/memes/smart.jpg";
 import frog from "../../../../assets/memes/frog.jpg";
+import geraldine from "../../../../assets/memes/geraldine.jpg";
 //
 
 export const MemeGenerator = () => {
@@ -77,6 +78,7 @@ export const MemeGenerator = () => {
               <MenuItem value={aliens}>Aliens</MenuItem>
               <MenuItem value={futurama}>Futurama</MenuItem>
               <MenuItem value={fire}>Casa en llamas</MenuItem>
+              <MenuItem value={geraldine}>Geraldine</MenuItem>
             </Select>
           </FormControl>
 

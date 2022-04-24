@@ -1,7 +1,16 @@
 /* 
-Categories=blog, app, doc, tutorial,other
+Categories=blog, app, doc, tutorial,portfolio,other,
 */
 export const entriesList = [
+  {
+    id: "8",
+    title: "Coffee Shop",
+    img: "https://live.staticflickr.com/65535/51985093368_3b509d2b85.jpg",
+    description: "Aplicacion ejemplo de una cafeteria",
+    date: "05-04-2022",
+    route: "https://carlos-valencia-portfolio.netlify.app/coffeeshop",
+    category: "portfolio",
+  },
   {
     id: "7",
     title: "Meme Generator",
@@ -40,7 +49,7 @@ export const entriesList = [
     category: "app",
   },
   {
-    id: "2",
+    id: "3",
     title: "NFT ¿Que es y como funciona?",
     img: "https://live.staticflickr.com/65535/51884255769_770184740a_b.jpg",
     description:
@@ -50,7 +59,7 @@ export const entriesList = [
     category: "blog",
   },
   {
-    id: "1",
+    id: "2",
     title: "Big data",
     img: "https://live.staticflickr.com/65535/51883936756_3049eac5f0_c.jpg",
     description: "¿Que es Big data?",
@@ -59,7 +68,7 @@ export const entriesList = [
     category: "blog",
   },
   {
-    id: "3",
+    id: "1",
     title: "About",
     img: "https://live.staticflickr.com/65535/51902190659_7f48b2bd6d_c.jpg",
     description: "Acerca de esta página",
@@ -79,4 +88,12 @@ export const getApps = () => {
 
 export const getAll = () => {
   return entriesList;
+};
+
+export const getNewest = () => {
+  return entriesList.slice(0, 3);
+};
+
+export const getPortfolio = () => {
+  return entriesList.filter((entry) => entry.category === "portfolio");
 };

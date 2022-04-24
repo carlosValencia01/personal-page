@@ -25,7 +25,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 
 export const CardShared = ({ title, img, description, date, route }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} className="card__main">
       <CardActionArea>
         <CardMedia component="img" height="180" image={img} alt="..." />
         <CardContent>
@@ -45,7 +45,13 @@ export const CardShared = ({ title, img, description, date, route }) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button href={route} size="small" color="primary" variant="outlined">
+        <Button
+          href={route}
+          size="small"
+          color="primary"
+          variant="outlined"
+          className="card__button"
+        >
           Abrir
         </Button>
       </CardActions>

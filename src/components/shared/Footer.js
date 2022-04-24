@@ -37,4 +37,3 @@ export const Footer = () => {
     </footer>
   );
 };
-// TODO: - Add links to linkedin and mail

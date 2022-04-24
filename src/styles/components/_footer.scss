@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  position: fixed;
 }
 
 .footer__text {
@@ -26,25 +27,3 @@
   margin-right: 0;
   padding-right: 15px;
 }
-
-// .footer__main {
-//   background-color: $primary;
-//   color: $light-grey;
-//   opacity: 0.8;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: auto;
-// }
-
-// .footer__text {
-//   display: inline;
-//   background-color: red;
-// }
-
-// .footer__contact {
-//   float: right;
-//   margin-left: auto;
-//   margin-right: 0;
-//   padding-right: 15px;
-// }
