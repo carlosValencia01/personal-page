@@ -1,7 +1,17 @@
 /* 
 Categories=blog, app, doc, tutorial,portfolio,other,
 */
+
 export const entriesList = [
+  {
+    id: "9",
+    title: "Principio SOLID",
+    img: "https://live.staticflickr.com/65535/52044233319_10c3bd705c.jpg",
+    description: "Desarrollando software basandonos en las buenas prácticas",
+    date: "02-05-2022",
+    route: "/blogs/principio-SOLID",
+    category: "blog",
+  },
   {
     id: "8",
     title: "Coffee Shop",
