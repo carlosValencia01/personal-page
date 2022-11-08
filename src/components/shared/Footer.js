@@ -29,7 +29,7 @@ export const Footer = () => {
         <IconButton
           aria-label="delete"
           size="large"
-          href="mailto:jocavalenciava@ittepic.edu.mx?Subject=Contact%20from%20web%20page"
+          href="mailto:carlosvalencia.dev@gmail.com?Subject=Contact%20from%20web%20page"
         >
           <MailOutlineIcon fontSize="inherit" />
         </IconButton>
