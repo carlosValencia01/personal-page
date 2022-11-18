@@ -23,8 +23,9 @@ export const AboutScreen = () => {
         </p>
         <img
           className="about__image animate__animated animate__fadeIn"
-          src="https://live.staticflickr.com/65535/51907203687_9616b4f39d_c.jpg"
-          alt="profile-pic"
+          src="https://live.staticflickr.com/65535/52506697051_d363e50d27_k.jpg"
+          alt="https://live.staticflickr.com/65535/51907203687_9616b4f39d_c.jpg"
+          
         />
         <hr />
         <h2 className="about__title animate__animated animate__slideInLeft animate__faster">
