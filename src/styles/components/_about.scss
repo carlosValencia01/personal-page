@@ -9,6 +9,7 @@
   padding-left: 7vw;
   padding-right: 7vw;
   background: rgba(0, 0, 0, 0.6);
+  position: relative;
 }
 
 .about__title {
@@ -30,4 +31,10 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about__lanButtons{
+  position: absolute;
+  top: 0px;
+  right: 15px;
 }
