@@ -45,7 +45,7 @@ export const AboutMe = () => {
                 <div id='about'>
                     <h1>{t('section-about')}</h1>
                     <div className='about__container'>
-                        <img className='profile__picture' src="../../public/profile.png" alt="Profile picture" />
+                        <img className='profile__picture' src="../../../public/profile.png" alt="Profile picture" />
                         <p className='content__about'>{t('content-about')}</p>
                     </div>
                 </div>
