@@ -115,7 +115,7 @@ export const AboutMe = () => {
                 </div>
                 <div id='education'>
                     <h2>{t('section-education')}</h2>
-                    <div class="educacion-item">
+                    <div className="educacion-item">
                         <h3>Ingeniería en Sistemas / Licenciatura en Informática</h3>
                         <p>Universidad Nacional de [Nombre], [Ciudad, País]</p>
                         <span>2019 - 2023</span>
