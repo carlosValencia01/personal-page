@@ -1,5 +1,16 @@
 {
     "welcome": "Bienvenido a mi portafolio",
     "about": "Sobre mí",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "navbar-home":"Inicio",
+    "navbar-about":"Sobre mí",
+    "navbar-proyects":"Proyectos",
+    "navbar-contact":"Contacto",
+    "section-about":"Sobre mí",
+    "section-skills":"Habilidades",
+    "section-projects":"Proyectos",
+    "section-education":"Educacion",
+    "section-lifestyle":"Hobbies y estilo de vida",
+    "section-contact":"Contacto",
+    "content-about": "👋 ¡Hola! Soy un desarrollador Full Stack con enfoque en la creación de soluciones web modernas, eficientes y escalables.\n\nCombino lo mejor del frontend con React y el poder del backend con C# y .NET para desarrollar aplicaciones robustas que brindan valor real a los usuarios.\n\nMe apasiona aprender constantemente, resolver problemas complejos y trabajar en proyectos que representen un reto.\n\nAdemás de programar, disfruto mejorar mis habilidades técnicas, colaborar en equipo y mantenerme actualizado con las últimas tendencias del desarrollo web.\n\nBienvenido/a a mi portafolio: aquí encontrarás algunos de los proyectos que reflejan mi estilo de trabajo, mi enfoque en la calidad del código y mi compromiso con la excelencia."
   }

@@ -10,11 +10,15 @@
     line-height: 1.6;
   }
   
+  .about__body{
+    background-color: #000;
+  }
+
   .navbar {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #1f2937; /* gris oscuro */
+    background-color: #1f2937ea; /* gris oscuro */
     color: #fff;
     padding: 1rem 0;
     z-index: 1000;
@@ -113,5 +117,36 @@
   .label.right {
     text-align: right;
   }
+
   
+  /* content */
+
+  .main__container{
+    width: 90%;    
+    padding: 20px 50px;
+    margin: auto;
+    background-color: #eee;
+    box-shadow: 0 4px 8px 0 rgba(20, 39, 244, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.92);
+  }
+
+  .content__about{
+    text-align: justify;    
+    width: 65%;
+    
+  }
+
+  .profile__picture{
+    border-radius: 50%;
+    width: 20%;
+  }
+
+  .about__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
   
+  #about{
+    padding-top: 60px;
+  }

@@ -1,5 +1,15 @@
 {
     "welcome": "Welcome to my portfolio",
     "about": "About Me",
-    "contact": "Contact"
+    "contact": "Contact",
+    "navbar-home":"Home",
+    "navbar-about":"About Me",
+    "navbar-proyects":"Projects",
+    "navbar-contact":"Contact",
+    "section-about":"About Me",
+    "section-skills":"Skills",
+    "section-projects":"Projects",
+    "section-education":"Education",
+    "section-lifestyle":"Hobbies and lifestyle",
+    "section-contact":"Contact"
   }
