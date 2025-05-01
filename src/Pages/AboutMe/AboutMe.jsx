@@ -45,7 +45,7 @@ export const AboutMe = () => {
                 <div id='about'>
                     <h1>{t('section-about')}</h1>
                     <div className='about__container'>
-                        <img className='profile__picture' src="public\profile.png" alt="Profile picture" />
+                        <img className='profile__picture' src="../../public/profile.png" alt="Profile picture" />
                         <p className='content__about'>{t('content-about')}</p>
                     </div>
                 </div>
@@ -102,8 +102,8 @@ export const AboutMe = () => {
                                     <tr><p>B1</p></tr>
                                 </td>
                                 <td>
-                                    <tr><img src="public\mx.svg" alt="it" className='country-flag'/></tr>
-                                    <tr><img src="public\us.svg" alt="it" className='country-flag'/></tr>
+                                    <tr><img src="public\mx.svg" alt="mx" className='country-flag'/></tr>
+                                    <tr><img src="public\us.svg" alt="us" className='country-flag'/></tr>
                                     <tr><img src="public\it.svg" alt="it" className='country-flag'/></tr>
                                 </td>
                             </table>                                                                        
