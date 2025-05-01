@@ -6,7 +6,7 @@
   }
   
   body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: sans-serif;
     line-height: 1.6;
   }
   
@@ -72,6 +72,7 @@
     .navbar.active .nav-links {
       display: flex;
     }
+
   }
 
   /* Slider */
@@ -138,15 +139,51 @@
   .profile__picture{
     border-radius: 50%;
     width: 20%;
+    min-width: 250px;
+    margin-bottom: 20px;
   }
 
   .about__container{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 25px;
+    align-items: center;
   }
   
   #about{
     padding-top: 60px;
+  }
+
+  .skills__container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .skills__item{
+    width: 50%;
+    min-width: 400px;
+  }
+
+  table{
+    margin: auto;
+  }
+
+  .sub-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  th, td {
+    padding: 25px;
+  }
+
+  .country-flag{
+    width: 30px;
+    border-radius: 3px;
   }

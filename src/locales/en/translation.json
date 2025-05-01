@@ -11,5 +11,12 @@
     "section-projects":"Projects",
     "section-education":"Education",
     "section-lifestyle":"Hobbies and lifestyle",
-    "section-contact":"Contact"
+    "section-contact":"Contact",
+    "technologies-skills":"Technologies and Frameworks",
+    "languages-skills":"Languages",
+    "languages-spanish":"Spanish",
+    "languages-english":"English",
+    "languages-italian":"Italian",
+    "languages-spanish-grade":"Native",
+    "years":"years"
   }

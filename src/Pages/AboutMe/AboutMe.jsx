@@ -18,11 +18,6 @@ export const AboutMe = () => {
       }, [i18n.language]);
 
 
-    {/* <h1>{t('welcome')}</h1> 
-        <button onClick={() => i18n.changeLanguage('en')}>English</button>
-                <button onClick={() => i18n.changeLanguage('es')}>Español</button>
-        */}
-
     return (
         <div className='about__body'>
             {/* Navbar */}
@@ -31,7 +26,7 @@ export const AboutMe = () => {
                     <div className="logo">Home</div>
                     <nav>
                         <ul className="nav-links">
-                        <li><a href="#home">{t('navbar-home')}</a></li>
+                        {/* <li><a href="#home">{t('navbar-home')}</a></li> */}
                         <li><a href="#about">{t('navbar-about')}</a></li>
                         <li><a href="#projects">{t('navbar-proyects')}</a></li>
                         <li><a href="#contact">{t('navbar-contact')}</a></li>
@@ -53,22 +48,97 @@ export const AboutMe = () => {
                         <p className='content__about'>{t('content-about')}</p>
                     </div>
                 </div>
+
                 <div id='skills'>
                     <h2>{t('section-skills')}</h2>
-
+                    <div className='skills__container'>                    
+                        <div className='skills__item'>
+                            <span className='sub-title'>{t('technologies-skills')}</span>
+                            <table className='table'>
+                                <td>
+                                    <tr><p>.NET</p></tr>
+                                    <tr><p>SQL</p></tr>
+                                    <tr><p>React</p></tr>
+                                    <tr><p>Vue</p></tr>
+                                    <tr><p>Angular</p></tr>
+                                    <tr><p>JavaScript</p></tr>
+                                    <tr><p>C#</p></tr>
+                                    <tr><p>HTML</p></tr>
+                                </td>
+                                <td>
+                                    <tr><p>⭐⭐⭐⭐</p></tr>
+                                    <tr><p>⭐⭐⭐⭐</p></tr>
+                                    <tr><p>⭐⭐⭐⭐</p></tr>
+                                    <tr><p>⭐⭐⭐⭐</p></tr>
+                                    <tr><p>⭐⭐</p></tr>
+                                    <tr><p>⭐⭐⭐⭐</p></tr>
+                                    <tr><p>⭐⭐⭐</p></tr>
+                                    <tr><p>⭐⭐⭐⭐⭐</p></tr>
+                                </td>
+                                <td>
+                                    <tr><p>x {t('years')}</p></tr>
+                                    <tr><p>x {t('years')}</p></tr>
+                                    <tr><p>x {t('years')}</p></tr>
+                                    <tr><p>x {t('years')}</p></tr>
+                                    <tr><p>x {t('years')}</p></tr>
+                                    <tr><p>x {t('years')}</p></tr>
+                                    <tr><p>x {t('years')}</p></tr>
+                                    <tr><p>x {t('years')}</p></tr>
+                                </td>
+                            </table>
+                        </div>
+                        <div className='skills__item'>
+                            <span className='sub-title'>{t('languages-skills')}</span>
+                            <table className='table'>
+                                <td>
+                                    <tr><p>{t('languages-spanish')}</p></tr>
+                                    <tr><p>{t('languages-english')}</p></tr>
+                                    <tr><p>{t('languages-italian')}</p></tr>
+                                </td>
+                                <td>
+                                    <tr><p>{t('languages-spanish-grade')}</p></tr>
+                                    <tr><p>C2</p></tr>
+                                    <tr><p>B1</p></tr>
+                                </td>
+                                <td>
+                                    <tr><img src="public\mx.svg" alt="it" className='country-flag'/></tr>
+                                    <tr><img src="public\us.svg" alt="it" className='country-flag'/></tr>
+                                    <tr><img src="public\it.svg" alt="it" className='country-flag'/></tr>
+                                </td>
+                            </table>                                                                        
+                        </div>
+                    </div>
                 </div>
                 <div id='projects'>
                     <h2>{t('section-projects')}</h2>
                 </div>
                 <div id='education'>
                     <h2>{t('section-education')}</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta modi qui, voluptates fuga provident minima, suscipit quam perspiciatis id repellendus deleniti quis sunt perferendis mollitia. Exercitationem in, voluptate culpa aut reiciendis rem officia? Dicta eius corporis minus ut, consequatur fugiat commodi esse, sit ipsum, est in magnam? Accusantium temporibus blanditiis sequi fugiat, sint ipsam mollitia doloremque minus velit architecto non. Enim, ut dolorem doloremque nulla assumenda architecto distinctio quaerat et nihil accusantium rerum illum? Id reprehenderit expedita sapiente, enim animi debitis. Fugit ducimus laudantium rerum ullam quibusdam voluptatum molestias, repudiandae placeat illo a voluptas veniam, commodi assumenda ipsam. Repudiandae, qui.</p>
+                    <div class="educacion-item">
+                        <h3>Ingeniería en Sistemas / Licenciatura en Informática</h3>
+                        <p>Universidad Nacional de [Nombre], [Ciudad, País]</p>
+                        <span>2019 - 2023</span>
+                        <p>Formación sólida en estructuras de datos, algoritmos, bases de datos y desarrollo de software. Participación en proyectos académicos orientados al desarrollo web full stack.</p>
+                    </div>
                 </div>
                 <div id='lifestyle'>
                     <h2>{t('section-lifestyle')}</h2>
+                    <p>{t('content-lifestyle')}</p>
                 </div>
+
                 <div id='contact'>
                     <h2>{t('section-contact')}</h2>
+                    <div>
+                        <p>
+                            ¿Te interesa colaborar conmigo o quieres saber más sobre mis proyectos? Estoy siempre abierto a nuevas oportunidades y desafíos. Puedes contactarme a través del siguiente formulario o en mis redes profesionales.
+                        </p>
+
+                        <ul>
+                            <li>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></li>
+                            <li>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></li>
+                            <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></li>
+                        </ul>
+                    </div>
                 </div>
             </main>
         </div>
