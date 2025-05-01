@@ -134,9 +134,9 @@ export const AboutMe = () => {
                         </p>
 
                         <ul>
-                            <li>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></li>
-                            <li>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></li>
-                            <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></li>
+                            <li>Email: <a href="mailto:carlosvalencia.dev@gmail.com">carlosvalencia.dev@gmail.com</a></li>
+                            <li>LinkedIn: <a href="https://linkedin.com/in/carlos-valencia-valenzuela-534b0419a" target="_blank">linkedin.com/in/carlos-valencia-valenzuela-534b0419a</a></li>
+                            <li>GitHub: <a href="https://github.com/carlosValencia01" target="_blank">github.com/carlosValencia01</a></li>
                         </ul>
                     </div>
                 </div>
