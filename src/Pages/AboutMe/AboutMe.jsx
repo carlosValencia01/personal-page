@@ -23,7 +23,7 @@ export const AboutMe = () => {
             {/* Navbar */}
             <header className="navbar">
                 <div className="container">
-                    <div className="logo">Home</div>
+                    {/* <div className="logo">Home</div> */}
                     <nav>
                         <ul className="nav-links">
                         {/* <li><a href="#home">{t('navbar-home')}</a></li> */}
@@ -37,6 +37,7 @@ export const AboutMe = () => {
                         <span className="label left">EN</span>
                         <span className="label right">ES</span>
                     </div>
+                    {/* TODO - Add button to download CV */}
                 </div>
             </header>
 
