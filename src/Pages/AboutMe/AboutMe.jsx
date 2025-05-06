@@ -131,7 +131,7 @@ export const AboutMe = () => {
                     <h2>{t('section-contact')}</h2>
                     <div>
                         <p>
-                            ¿Te interesa colaborar conmigo o quieres saber más sobre mis proyectos? Estoy siempre abierto a nuevas oportunidades y desafíos. Puedes contactarme a través de mis redes profesionales.
+                            {t('contact-subtitle')}                            
                         </p>
 
                         <ul>

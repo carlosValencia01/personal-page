@@ -12,6 +12,8 @@
     "section-education":"Education",
     "section-lifestyle":"Hobbies and lifestyle",
     "section-contact":"Contact",
+    "content-about": "👋 Hello! I'm a Full Stack developer focused on building modern, efficient, and scalable web solutions.\n\nI combine the best of the frontend with React and the power of the backend with C# and .NET to develop robust applications that provide real value to users.\n\nI'm passionate about constantly learning, solving complex problems, and working on challenging projects.\n\nBesides programming, I enjoy improving my technical skills, collaborating with teams, and staying up to date with the latest trends in web development.\n\nWelcome to my site: here you will find information about some of the projects that reflect my working style, my focus on code quality, and my commitment to excellence.",
+    "content-lifestyle":"Beyond coding, I'm a person focused on constant growth and personal balance. I dedicate my evenings to working out at the gym, which helps me maintain discipline and energy. I study programming and Italian daily, and in my free time, I enjoy playing the guitar, an activity that allows me to express creativity in a different way. I firmly believe that a balanced developer achieves more creative, efficient, and sustainable solutions. I'm also passionate about Formula 1 racing, and in my free time, I restore and repair gadgets like iPods and other unusual devices.",
     "technologies-skills":"Technologies and Frameworks",
     "languages-skills":"Languages",
     "languages-spanish":"Spanish",
@@ -19,5 +21,6 @@
     "languages-italian":"Italian",
     "languages-spanish-grade":"Native",
     "years":"years",
-    "footer-rights":"All rights reserved"
+    "footer-rights":"All rights reserved",
+    "contact-subtitle":"Are you interested in collaborating with me or want to know more about my projects? I'm always open to new opportunities and challenges. You can contact me through my professional networks."
   }

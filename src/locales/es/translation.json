@@ -12,8 +12,8 @@
     "section-education":"Educacion",
     "section-lifestyle":"Hobbies y estilo de vida",
     "section-contact":"Contacto",
-    "content-about": "👋 ¡Hola! Soy un desarrollador Full Stack con enfoque en la creación de soluciones web modernas, eficientes y escalables.\n\nCombino lo mejor del frontend con React y el poder del backend con C# y .NET para desarrollar aplicaciones robustas que brindan valor real a los usuarios.\n\nMe apasiona aprender constantemente, resolver problemas complejos y trabajar en proyectos que representen un reto.\n\nAdemás de programar, disfruto mejorar mis habilidades técnicas, colaborar en equipo y mantenerme actualizado con las últimas tendencias del desarrollo web.\n\nBienvenido/a a mi portafolio: aquí encontrarás algunos de los proyectos que reflejan mi estilo de trabajo, mi enfoque en la calidad del código y mi compromiso con la excelencia.",
-    "content-lifestyle":"Más allá del código, soy una persona enfocada en el crecimiento constante y el equilibrio personal. Dedico mis tardes al entrenamiento en el gimnasio, lo que me ayuda a mantener la disciplina y la energía. Estudio programación e italiano diariamente, y en mis momentos libres disfruto tocar la guitarra, una actividad que me permite expresar creatividad de otra forma. Creo firmemente que un desarrollador equilibrado logra soluciones más creativas, eficientes y sostenibles.",
+    "content-about": "👋 ¡Hola! Soy un desarrollador Full Stack con enfoque en la creación de soluciones web modernas, eficientes y escalables.\n\nCombino lo mejor del frontend con React y el poder del backend con C# y .NET para desarrollar aplicaciones robustas que brindan valor real a los usuarios.\n\nMe apasiona aprender constantemente, resolver problemas complejos y trabajar en proyectos que representen un reto.\n\nAdemás de programar, disfruto mejorar mis habilidades técnicas, colaborar en equipo y mantenerme actualizado con las últimas tendencias del desarrollo web.\n\nBienvenido/a a mi sitio: aquí encontrarás información sobre algunos de los proyectos que reflejan mi estilo de trabajo, mi enfoque en la calidad del código y mi compromiso con la excelencia.",
+    "content-lifestyle":"Más allá del código, soy una persona enfocada en el crecimiento constante y el equilibrio personal. Dedico mis tardes al entrenamiento en el gimnasio, lo que me ayuda a mantener la disciplina y la energía. Estudio programación e italiano diariamente, y en mis momentos libres disfruto tocar la guitarra, una actividad que me permite expresar creatividad de otra forma. Creo firmemente que un desarrollador equilibrado logra soluciones más creativas, eficientes y sostenibles. También me apasionan las carreras de Formula 1 y durante mi tiempo libre restauro y reparo gadgets como iPods y demás dispositivos curiosos.",
     "technologies-skills":"Tecnologias y Frameworks",
     "languages-skills":"Idiomas",
     "languages-spanish":"Español",
@@ -21,5 +21,6 @@
     "languages-italian":"Italiano",
     "languages-spanish-grade":"Nativo",
     "years":"años",
-    "footer-rights":"Todos los derechos reservados"
+    "footer-rights":"Todos los derechos reservados",
+    "contact-subtitle":"¿Te interesa colaborar conmigo o quieres saber más sobre mis proyectos? Estoy siempre abierto a nuevas oportunidades y desafíos. Puedes contactarme a través de mis redes profesionales."
 }
