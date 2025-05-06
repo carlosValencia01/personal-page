@@ -232,4 +232,19 @@
     position: absolute;
     right: 2rem;    
   }
-  
+
+  .icon-color{
+    fill:#38bdf8;
+  }
+
+  .icon-color:hover{
+    fill:#0778fa;
+  }
+
+  .icon-white{
+    fill:#fff;
+  }
+
+  .icon-white:hover{
+    fill:#aaa;
+  }
