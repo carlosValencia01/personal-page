@@ -180,7 +180,7 @@
   }
 
   th, td {
-    padding: 25px;
+    padding: 0 25px;
   }
 
   .country-flag{
@@ -234,11 +234,11 @@
   }
 
   .icon-color{
-    fill:#38bdf8;
+    fill:#2c499eea;
   }
 
   .icon-color:hover{
-    fill:#0778fa;
+    fill:#1f2937ea;
   }
 
   .icon-white{
@@ -247,4 +247,8 @@
 
   .icon-white:hover{
     fill:#aaa;
+  }
+
+  .section-title{
+    margin-top: 2rem;
   }
