@@ -3,11 +3,15 @@ import '../../i18n';
 import './styles.css'
 import { useEffect, useState } from 'react';
 import { ProjectComponent } from './ProjectComponent';
-import { projects } from './projectInfo'
+import { projectsEs } from './projectInfoEs'
+import { projectsEn } from './projectInfoEn'
 
 export const AboutMe = () => {
     const { t, i18n } = useTranslation();
     const [lang, setLang] = useState(i18n.language || 'en');
+    const [projects, setProjects] = useState(projectsEn);
+        
+    
 
     const toggleLanguage = () => {
         const newLang = lang === 'en' ? 'es' : 'en';
@@ -17,6 +21,7 @@ export const AboutMe = () => {
     
       useEffect(() => {
         setLang(i18n.language);
+        lang === 'es' ? setProjects(projectsEs) : setProjects(projectsEn);
       }, [i18n.language]);
 
 
@@ -130,7 +135,7 @@ export const AboutMe = () => {
                     <h2 className='section-title'>{t('section-projects')}</h2>
                     {
                         projects.map(project => 
-                            <ProjectComponent key={project.id} name={project.name} />                            
+                            <ProjectComponent key={project.id} project={project} />                            
                         )
                     }                    
                 </div>

@@ -1,8 +1,19 @@
-export const ProjectComponent = (props) => {
+import './ProjectComponent.css'
+
+export const ProjectComponent = (props) => {    
     return (
-        <>
-            <h1>ProjectComponent</h1>
-            <h2>{props.name}</h2>
-        </>
+        <div className='main-container'>            
+            <h3>{props.project.name}</h3>
+            <p>{props.project.duration}</p>
+            <p>{props.project.compani}</p>
+            <p>{props.project.description}</p>
+            {/* TODO - show technologies as pills */}
+            <div className='pill-container'>
+                {props.project.technologies.map(technologie => 
+                    <div className='pill' key={technologie}>{technologie}</div>
+                            
+                )}
+            </div>
+        </div>
     )
 }

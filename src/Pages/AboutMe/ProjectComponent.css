@@ -1,0 +1,23 @@
+.main-container{    
+    padding-left: 1rem;
+    border: 2px solid #524747cc ;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.pill-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.pill{
+    background-color: #1b0fb9c6;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
