@@ -6,8 +6,7 @@ export const ProjectComponent = (props) => {
             <h3>{props.project.name}</h3>
             <p>{props.project.duration}</p>
             <p>{props.project.compani}</p>
-            <p>{props.project.description}</p>
-            {/* TODO - show technologies as pills */}
+            <p className='content-description'>{props.project.description}</p>
             <div className='pill-container'>
                 {props.project.technologies.map(technologie => 
                     <div className='pill' key={technologie}>{technologie}</div>

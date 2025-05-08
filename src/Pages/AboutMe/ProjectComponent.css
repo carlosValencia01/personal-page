@@ -3,12 +3,15 @@
     border: 2px solid #524747cc ;
     border-radius: 10px;
     margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 .pill-container{
-    display: flex;
+    margin-top: 1rem;
+    display: flexbox;
     justify-content: center;
-
+    box-sizing: border-box;
+    align-items: center;    
 }
 
 .pill{
@@ -20,4 +23,9 @@
     display: inline-block;
     margin: 4px 2px;
     border-radius: 16px;
+}
+
+.content-description{
+    text-align: justify;
+    margin-top: .8rem;
 }
