@@ -6,6 +6,8 @@ import { ProjectComponent } from './ProjectComponent';
 import { projectsEs } from './projectInfoEs'
 import { projectsEn } from './projectInfoEn'
 
+import MyCV from './CV_En.pdf'
+
 export const AboutMe = () => {
     const { t, i18n } = useTranslation();
     const [lang, setLang] = useState(i18n.language || 'en');
@@ -33,6 +35,10 @@ export const AboutMe = () => {
                     {/* <div className="logo">Home</div> */}
                     <nav>
                         <ul className="nav-links">
+                            {/* TODO - Download file depending on selected language */}
+                            {/* <a href={MyCV} download="MyExampleDoc" target='_blank'>
+                                <button>My Example Doc</button>
+                            </a> */}
                             {/* <li><a href="#home">{t('navbar-home')}</a></li> */}
                             <li><a href="#about">{t('navbar-about')}</a></li>
                             <li><a href="#projects">{t('navbar-proyects')}</a></li>
@@ -52,6 +58,7 @@ export const AboutMe = () => {
                 <div id='about'>
                     <h1 className='section-title'>{t('section-about')}</h1>
                     <div className='about__container'>
+                        {/* TODO - Use an actual picture */}
                         <img className='profile__picture' src="./profile.png" alt="Profile picture" />
                         <p className='content__about'>{t('content-about')}</p>
                     </div>

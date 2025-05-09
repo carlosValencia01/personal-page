@@ -1,9 +1,8 @@
 .main-container{    
-    padding-left: 1rem;
     border: 2px solid #524747cc ;
     border-radius: 10px;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .pill-container{
@@ -28,4 +27,11 @@
 .content-description{
     text-align: justify;
     margin-top: .8rem;
+}
+
+.project-name{
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: .05rem;
+    
 }
