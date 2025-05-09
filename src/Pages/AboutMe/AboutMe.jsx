@@ -66,43 +66,43 @@ export const AboutMe = () => {
                                 <tbody>
                                     <tr>
                                         <td>.NET</td>
-                                        <td>⭐⭐⭐⭐</td>
-                                        <td>x {t('years')}</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                        <td>3 {t('years')}</td>
                                     </tr>
                                     <tr>
                                         <td>SQL</td>
-                                        <td>⭐⭐⭐⭐</td>
-                                        <td>x {t('years')}</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                        <td>3 {t('years')}</td>
                                     </tr>
                                     <tr>
                                         <td>React</td>
-                                        <td>⭐⭐⭐⭐</td>
-                                        <td>x {t('years')}</td>
+                                        <td>⭐⭐⭐</td>
+                                        <td>2 {t('years')}</td>
                                     </tr>
                                     <tr>
                                         <td>Vue</td>
-                                        <td>⭐⭐⭐⭐</td>
-                                        <td>x {t('years')}</td>
+                                        <td>⭐⭐⭐</td>
+                                        <td>2 {t('years')}</td>
                                     </tr>
                                     <tr>
                                         <td>Angular</td>
-                                        <td>⭐⭐⭐⭐</td>
-                                        <td>x {t('years')}</td>
+                                        <td>⭐⭐</td>
+                                        <td>2 {t('years')}</td>
                                     </tr>
                                     <tr>
                                         <td>JavaScript</td>
                                         <td>⭐⭐⭐⭐</td>
-                                        <td>x {t('years')}</td>
+                                        <td>3 {t('years')}</td>
                                     </tr>
                                     <tr>
                                         <td>C#</td>
                                         <td>⭐⭐⭐⭐</td>
-                                        <td>x {t('years')}</td>
+                                        <td>3 {t('years')}</td>
                                     </tr>
                                     <tr>
                                         <td>HTML</td>
                                         <td>⭐⭐⭐⭐</td>
-                                        <td>x {t('years')}</td>
+                                        <td>3 {t('years')}</td>
                                     </tr>
                                 </tbody>
                             </table>
