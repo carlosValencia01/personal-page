@@ -4,7 +4,7 @@ export const projectsEs = [
         name:'Desarrollador Full Stack (.Net, Vue / React)',
         duration:'2023 - 2025',
         compani:'Tata Consultancy Services (TCS)',
-        description:`Participé en el ciclo completo de vida de desarrollo de software para plataformas web empresariales, orientadas a la automatización de procesos internos y mejora operativa. Mis responsabilidades incluyeron el análisis detallado de requerimientos funcionales, diseño técnico de soluciones, implementación de interfaces modernas con React y Vue.js, y desarrollo de APIs robustas en .NET Core.
+        description:`Participé en el ciclo completo de vida de desarrollo de software para plataformas web empresariales, orientadas a la automatización de procesos internos y mejora operativa. Mis responsabilidades incluyeron el análisis detallado de requerimientos funcionales, diseño técnico de soluciones, implementación de interfaces modernas con React y Vue.js, y desarrollo de APIs robustas en .NET.
         Colaboré en entornos ágiles, integrando buenas prácticas como control de versiones con Git y metodologías de trabajo colaborativo. Además, brindé soporte técnico postproducción, asegurando estabilidad, escalabilidad y cumplimiento de estándares de calidad.`,
         technologies:['SQL','C#','React','.Net','Vue','JavaScript','Entity Framework', 'Tailwind']
     },
@@ -20,7 +20,7 @@ export const projectsEs = [
     {
         id:2,
         name:'Desarrollador Full Stack (MEAN)',
-        duration:'Octubre 2020 -febrero 2021',
+        duration:'Octubre 2020 - Febrero 2021',
         compani:'Instituto Tecnologico De Tepic',
         description:`Participe en el diseño y desarrollo de una plataforma web para la gestión del servicio social estudiantil, utilizando el stack MEAN (MongoDB, Express.js, Angular, Node.js).
         El sistema permite a los estudiantes registrar, consultar y dar seguimiento a sus proyectos, mientras que los administradores pueden validar información, generar reportes y mantener comunicación con los usuarios. Implementé autenticación JWT, arquitectura RESTful y diseño responsivo, mejorando la eficiencia administrativa de la institución.`,

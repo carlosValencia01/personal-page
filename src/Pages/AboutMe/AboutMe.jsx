@@ -145,7 +145,7 @@ export const AboutMe = () => {
                         <h3>Ingeniería en Sistemas Computacionales</h3>
                         <p>Instituto Tecnológico de Tepic, Nayarit, Mexico</p>
                         <span>2014 - 2019</span>
-                        <p className='education-content'>Formación sólida en estructuras de datos, algoritmos, bases de datos y desarrollo de software. Participación en proyectos académicos orientados al desarrollo web full stack.</p>
+                        <p className='education-content'>{t('content-education')}</p>
                     </div>
                 </div>
                 <div id='lifestyle'>
