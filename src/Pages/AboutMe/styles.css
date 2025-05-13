@@ -161,8 +161,12 @@
     align-items: center;
   }
   
-  #about{
+  #about, #projects, #contact{
     padding-top: 60px;
+  }
+
+  #skills, #education, #lifestyle{
+    padding-top: 20px;
   }
 
   .skills__container{
