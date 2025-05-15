@@ -16,8 +16,6 @@ export const AboutMe = () => {
     const [projects, setProjects] = useState(projectsEn);
     const [MyCV, setMyCV] = useState(MyCVEn)
         
-    
-
     const toggleLanguage = () => {
         const newLang = lang === 'en' ? 'es' : 'en';
         i18n.changeLanguage(newLang);
@@ -64,8 +62,9 @@ export const AboutMe = () => {
                 <div id='about'>
                     <h1 className='section-title'>{t('section-about')}</h1>
                     <div className='about__container'>
-                        {/* TODO - Use an actual picture */}
-                        <img className='profile__picture' src="./profile.png" alt="Profile picture" />
+                        <img className='profile__picture' 
+                            src="https://avatars.githubusercontent.com/u/52218888?s=400&u=97ad0e24c1b722d2cc638c55e385b3de823136c7&v=4" 
+                            alt="Profile picture" />
                         <p className='content__about'>{t('content-about')}</p>
                     </div>
                 </div>
@@ -172,8 +171,7 @@ export const AboutMe = () => {
                         <p className='contact-content'>
                             {t('contact-subtitle')}                            
                         </p>
-                        {/* TODO - Add margin top */}
-                        <table className='table'>
+                        <table className='table contact-table'>
                             <tbody>
                                 <tr>
                                     <td>Email:</td>

@@ -290,3 +290,8 @@
   .contact-content, .lifestyle-content, .education-content{
     text-align: justify;
   }
+
+  .contact-table{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
