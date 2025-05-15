@@ -9,6 +9,10 @@
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.6;
   }
+ 
+  #about, #projects, #contact, #skills, #education, #lifestyle{
+    animation: fadeIn 3s;
+  }
   
   .about__body{
     background-color: #000;
@@ -66,6 +70,7 @@
     width: 20%;
     min-width: 200px;
     margin-bottom: 20px;
+    animation: fadeIn 3s;
   }
 
 
@@ -295,3 +300,13 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+
+  /* Animations */
+  @keyframes fadeIn {
+  0% { 
+    opacity: .7; 
+    }
+  100% { 
+    opacity: 1; 
+    }
+}
