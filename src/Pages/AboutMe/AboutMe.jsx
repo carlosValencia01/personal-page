@@ -136,7 +136,7 @@ export const AboutMe = () => {
                                     </tr>
                                     <tr>
                                         <td>{t('languages-italian')}</td>
-                                        <td>B1</td>
+                                        <td>A2</td>
                                         <td><img src=".\it.svg" alt="it" className='country-flag'/></td>
                                     </tr>
                                 </tbody>
@@ -155,8 +155,8 @@ export const AboutMe = () => {
                 <div id='education'>
                     <h2 className='section-title'>{t('section-education')}</h2>
                     <div className="educacion-item">
-                        <h3>Ingeniería en Sistemas Computacionales</h3>
-                        <p>Instituto Tecnológico de Tepic, Nayarit, Mexico</p>
+                        <h3>{t('education-degree')}</h3>
+                        <p>{t('education-institution')}</p>
                         <span>2014 - 2019</span>
                         <p className='education-content'>{t('content-education')}</p>
                     </div>
@@ -172,7 +172,7 @@ export const AboutMe = () => {
                         <p className='contact-content'>
                             {t('contact-subtitle')}                            
                         </p>
-
+                        {/* TODO - Add margin top */}
                         <table className='table'>
                             <tbody>
                                 <tr>
