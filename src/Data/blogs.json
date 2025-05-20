@@ -5,7 +5,16 @@
     "title": "Cómo aprender React",
     "author": "Juan Pérez",
     "date": "2024-05-01",
-    "content": "Aquí te explico cómo empezar con React...",
+    "content": [
+      {
+        "subtitle":"Este es un subtitulo",
+        "contenido":"Este es un contenido para la pagina de stock del blog"
+      },
+      {
+        "subtitle":"Este es otro subtitulo",
+        "contenido":"Este es otro contenido para la pagina de stock del blog"
+      }
+    ],
     "tags": ["react", "javascript", "frontend"]
   },
   {
@@ -14,7 +23,17 @@
     "title": "Principios SOLID explicados",
     "author": "Juan Pérez",
     "date": "2024-05-10",
-    "content": "SOLID es un acrónimo que significa...",
+    "content": [
+      {
+        "subtitle":"Este es un subtitulo",
+        "contenido":"SOLID es un acrónimo que significa..."
+      },
+      {
+        "subtitle":"Este es otro subtitulo",
+        "contenido":"Este es otro contenido para la pagina de stock del blog"
+      }
+    ],
     "tags": ["arquitectura", "SOLID", "poo"]
   }
 ]
+    

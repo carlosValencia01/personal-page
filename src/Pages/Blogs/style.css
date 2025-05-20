@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Layout Holly Grail con CSS Grid */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Áreas */
+header {
+  grid-area: header;
+  background: #0a0a23;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  background: #ddd;
+  padding: 1rem;
+  height: 100%;
+}
+
+main {
+  grid-area: main;
+  background: white;
+  padding: 1rem;
+  height: 100%;
+}
+
+aside {
+  grid-area: aside;
+  background: #f0f0f0;
+  padding: 1rem;
+  height: 100%;
+}
+
+footer {
+  grid-area: footer;
+  background: #0a0a23;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-left: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  nav, aside {
+    background: #eaeaea;
+  }
+}
