@@ -1,4 +1,14 @@
-/* Reset básico */
+:root {
+  --sidebar-width: 220px;
+  --gap: 0;
+  --bg-header: #0a0a23;
+  --bg-footer: #0a0a23;
+  --bg-nav: #e0e0e0;
+  --bg-aside: #f4f4f4;
+  --bg-main: white;
+  --text-color: #333;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,65 +17,63 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  background-color: #f9f9f9;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
 }
 
-/* Layout Holly Grail con CSS Grid */
-.container {
+.layout {
   display: grid;
   grid-template-areas:
     "header header header"
     "nav main aside"
     "footer footer footer";
-  grid-template-columns: 200px 1fr 200px;
+  grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  gap: var(--gap);
+  padding: var(--gap);
 }
 
-/* Áreas */
-header {
+/* Áreas con nombres explícitos */
+.header {
   grid-area: header;
-  background: #0a0a23;
+  background-color: var(--bg-header);
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
-nav {
+.sidebar-left {
   grid-area: nav;
-  background: #ddd;
+  background-color: var(--bg-nav);
   padding: 1rem;
-  height: 100%;
 }
 
-main {
+.main-content {
   grid-area: main;
-  background: white;
+  background-color: var(--bg-main);
   padding: 1rem;
-  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-aside {
+.sidebar-right {
   grid-area: aside;
-  background: #f0f0f0;
+  background-color: var(--bg-aside);
   padding: 1rem;
-  height: 100%;
 }
 
-footer {
+.footer {
   grid-area: footer;
-  background: #0a0a23;
+  background-color: var(--bg-footer);
   color: white;
-  text-align: center;
   padding: 1rem;
-  margin-left: 0;
+  text-align: center;
 }
 
-/* Responsividad */
+/* Responsivo */
 @media (max-width: 768px) {
-  .container {
+  .layout {
     grid-template-areas:
       "header"
       "nav"
@@ -75,7 +83,8 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  nav, aside {
-    background: #eaeaea;
+  .sidebar-left,
+  .sidebar-right {
+    background-color: #f0f0f0;
   }
 }
