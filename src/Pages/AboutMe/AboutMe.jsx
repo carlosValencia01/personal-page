@@ -9,6 +9,7 @@ import Tooltip from '../../Components/Tooltip';
 
 import MyCVEn from './CV_En.pdf'
 import MyCVEs from './CV_Es.pdf'
+import { Footer } from '../../Components/Footer';
 
 export const AboutMe = () => {
     const { t, i18n } = useTranslation();
@@ -206,7 +207,7 @@ export const AboutMe = () => {
                 </div>
             </main>
 
-            <footer className="footer">
+            {/* <footer className="footer">
                 <div className="footer-container">                    
                     <div className="footer-brand">
                         <h3>Carlos Valencia</h3>
@@ -223,11 +224,10 @@ export const AboutMe = () => {
                         <a href="mailto:carlosvalencia.dev@gmail.com">
                             <svg className='icon-white' height="25px" width="25px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fillRule="evenodd"></path> </g></svg>
                         </a>
-                    </div>
-                    
+                    </div>                    
                 </div>
-            </footer>
-
+            </footer> */}
+            <Footer/>
 
         </div>
     )
