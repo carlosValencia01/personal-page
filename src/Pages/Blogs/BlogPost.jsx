@@ -9,9 +9,11 @@ function BlogPost() {
   const { slug } = useParams();
   const blog = blogs.find(b => b.slug === slug);
   const [suggestedList, setSuggestedList] = useState([]);
+  const [contentList, setContentList] = useState([]);
 
   useEffect(() => {
     updateSuggestedBlogs();
+    updateContentList();
   }, [slug])
   
   const updateSuggestedBlogs = () => {
@@ -21,20 +23,38 @@ function BlogPost() {
     });
   }
 
+  const updateContentList = () => {
+    blog.content.forEach(x => {
+      //take each subtitle and add to contentent list
+      setContentList(prevItems => [...prevItems, x.subtitle]);
+    });
+  }
+
   if (!blog) return <h2>Blog no encontrado</h2>;
 
   return (
     <div className="layout">
-      <header className="header">Encabezado</header>
-      <nav className="sidebar-left">Navegación</nav>
+      <header className="header">
+        Encabezado
+      </header>
+      <nav className="sidebar-left">
+        <h2>Navegación</h2>
+        <ul>
+          {contentList.map((link, index) => (
+            <li key={index}>
+              <a href={`#`+link}>{link}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <main className="main-content">
          <div className="max-w-3xl mx-auto p-4">
             <h1 className="text-3xl font-bold mb-2">{blog.title}</h1>
             <p className="text-sm text-gray-600 mb-4">Por {blog.author} - {blog.date}</p>
             <div className="prose">{blog.content.map((x)=>(
-                <div key={x.subtitle}>
+                <div key={x.subtitle} id={x.subtitle}>
                   <h2>{x.subtitle}</h2>
-                  <p>{x.contenido}</p>
+                  <p>{x.contenido}</p>                  
                 </div>
             )
             )}</div>
