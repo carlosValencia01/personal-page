@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import BlogPost from './Pages/Blogs/BlogPost.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<AboutMe/>}/>
@@ -16,5 +16,5 @@ createRoot(document.getElementById('root')).render(
         {/* <AboutMe /> */}
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </>,
 )

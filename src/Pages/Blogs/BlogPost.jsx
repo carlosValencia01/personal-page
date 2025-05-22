@@ -3,10 +3,23 @@ import { useParams } from 'react-router';
 import blogs from '../../Data/blogs.json';
 import './style.css';
 import { Footer } from '../../Components/Footer';
+import { useEffect, useState } from 'react';
 
 function BlogPost() {
   const { slug } = useParams();
   const blog = blogs.find(b => b.slug === slug);
+  const [suggestedList, setSuggestedList] = useState([]);
+
+  useEffect(() => {
+    updateSuggestedBlogs();
+  }, [slug])
+  
+  const updateSuggestedBlogs = () => {
+    blog.tags.forEach(tag => {
+      //take each tag and search blogs that match that tag and add it to the suggestedlist
+      setSuggestedList(prevItems => [...prevItems, {title:tag}]);
+    });
+  }
 
   if (!blog) return <h2>Blog no encontrado</h2>;
 
@@ -27,8 +40,17 @@ function BlogPost() {
             )}</div>
          </div>
       </main>
-      <aside className="sidebar-right">Barra lateral</aside>
-      {/* <footer class="footer">Pie de página</footer> */}
+      <aside className="sidebar-right">
+        <h2>Barra lateral</h2>
+        <h3>Similar Blogs</h3>
+        <ul>
+          {
+            suggestedList.map((x)=>(
+              <li key={x.title}>{x.title}</li>
+            ))
+          }
+        </ul>
+      </aside>      
       <Footer/>
     </div>
   );
