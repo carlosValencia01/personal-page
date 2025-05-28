@@ -18,8 +18,21 @@ function BlogPost() {
   
   const updateSuggestedBlogs = () => {
     blog.tags.forEach(tag => {
+      console.log('tag searching', tag)
       //take each tag and search blogs that match that tag and add it to the suggestedlist
-      setSuggestedList(prevItems => [...prevItems, {title:tag}]);
+      let similarBlogs = blogs.filter(b=>b.tags.includes(tag));
+      similarBlogs.forEach(b => {
+        // avoid adding same blog
+        if(b === blog){}
+        // avoid adding duplicated blogs
+        else if(suggestedList.includes(b)){}
+        else{
+          setSuggestedList(prevItems => [...prevItems, b]);
+        }
+      })
+      
+      //TODO - if no similar blogs found return the top 5 most popular.
+      
     });
   }
 
@@ -66,7 +79,7 @@ function BlogPost() {
         <ul>
           {
             suggestedList.map((x)=>(
-              <li key={x.title}>{x.title}</li>
+              <li key={x.slug}><a href={x.slug} >{x.title}</a></li>
             ))
           }
         </ul>

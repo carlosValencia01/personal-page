@@ -15,7 +15,7 @@
         "contenido": "Fue desarrollado por Microsoft como parte de su plataforma .NET..."
       }
     ],
-    "tags": ["csharp", "programacion", "principiantes"]
+    "tags": ["csharp", "programacion", "principiantes","css"]
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
         "contenido": "Este es otro contenido para la pagina de stock del blog"
       }
     ],
-    "tags": ["arquitectura", "SOLID", "poo"]
+    "tags": ["arquitectura", "SOLID", "poo","css"]
   },
   {
     "id": 3,
