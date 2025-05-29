@@ -1,5 +1,6 @@
 import { Footer } from "../../Components/Footer"
 import { Header } from "../../Components/Header"
+import blogs from '../../Data/blogs.json';
 import './homepage.css'
 
 export const HomePage = () => {
@@ -7,8 +8,14 @@ export const HomePage = () => {
         <>
             <Header/>
             <main>
-                <h2>Home component</h2>
-                <p>Content</p>
+                {
+                    blogs.map((b)=>(
+                        <div key={b.id} className="card-container">
+                            <h3>{b.title}</h3>
+                            <button className="link-button"><a href={`/blog/${b.slug}`}>Ir a</a></button>
+                        </div>
+                    ))
+                }                
             </main>
             <Footer/>
         </>

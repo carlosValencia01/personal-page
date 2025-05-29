@@ -1,3 +1,30 @@
 main{
-    height: 80vh;
+    width: 90%;
+    background-color: #d9dee1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container{
+    width: 200px;
+    border: 2px solid greys;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.link-button{
+    background-color: #03406e;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 20px;
+    align-items: center;
+}
+
+.link-button > a{
+    text-decoration: none;
+    color: white;
 }
