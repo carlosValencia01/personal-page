@@ -6,6 +6,7 @@ import { AboutMe } from './Pages/AboutMe/AboutMe.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import BlogPost from './Pages/Blogs/BlogPost.jsx'
 import { HomePage } from './Pages/Home/HomePage.jsx'
+import { Main } from './Apps/AIChef/Main.jsx';
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about-me' element={<AboutMe/>}/>
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/AIChefApp" element={<Main />} />
         {/* <AboutMe /> */}
       </Routes>
     </BrowserRouter>
