@@ -4,22 +4,26 @@ import { ClaudeRecipe } from './ClaudeRecipe';
 import { IngredientList } from './IngredientList';
 import { getRecipeFromMistral } from './ai';
 import { Header } from './Header';
+import Loader from '../../Components/Loader';
 
 export const Main = () => {
     
     const [ingredients, setingredients] = useState(['chiken', 'spices', 'oranges','floor','pasta']);
     const [recipe, setRecipe] = useState('');
+    const [showLoading, setShowLoading] = useState(false);
 
     const recipeSection = useRef(null);
 
     useEffect(() => {
-      if(recipe !== '' && recipeSection.current !== null){
+     if(recipe !== '' && recipeSection.current !== null){
         recipeSection.current.scrollIntoView({behavior:"smooth"});
+        setShowLoading(false);
       }
     }, [recipe])
     
 
     async function handleGetRecipe(){
+        if(recipe==='')setShowLoading(true);
         const aiRecipe = await getRecipeFromMistral(ingredients);
         setRecipe(aiRecipe);
     }
@@ -39,6 +43,13 @@ export const Main = () => {
     return (
         <>
         <Header/>
+
+        {
+            showLoading 
+            ?<Loader/>
+            :null
+        }
+
         <main className='main-container'>
             <form className="add-ingredient-form" action={addIngredient}>
                 <input 
@@ -64,7 +75,8 @@ export const Main = () => {
                         <button onClick={handleGetRecipe}>Get a recipe</button>
                     </div>
                 }
-
+                
+                
                 {
                     recipe
                     ?<ClaudeRecipe recipe={recipe}/>
