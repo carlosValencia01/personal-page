@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './components.css';
 import { ClaudeRecipe } from './ClaudeRecipe';
 import { IngredientList } from './IngredientList';
@@ -10,6 +10,14 @@ export const Main = () => {
     const [ingredients, setingredients] = useState(['chiken', 'spices', 'oranges','floor','pasta']);
     const [recipe, setRecipe] = useState('');
 
+    const recipeSection = useRef(null);
+
+    useEffect(() => {
+      if(recipe !== '' && recipeSection.current !== null){
+        recipeSection.current.scrollIntoView({behavior:"smooth"});
+      }
+    }, [recipe])
+    
 
     async function handleGetRecipe(){
         const aiRecipe = await getRecipeFromMistral(ingredients);
@@ -48,7 +56,7 @@ export const Main = () => {
                 
                 {
                     ingredients.length > 3 &&
-                    <div className="get-recipe-container">
+                    <div className="get-recipe-container" ref={recipeSection}>
                         <div>
                             <h3>Ready for a recipe?</h3>    
                             <p>Generate a recipe from your list of ingredients.</p>
