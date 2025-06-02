@@ -7,8 +7,8 @@ import { Header } from './Header';
 import Loader from '../../Components/Loader';
 
 export const Main = () => {
-    
-    const [ingredients, setingredients] = useState(['chiken', 'spices', 'oranges','floor','pasta']);
+    //'chiken', 'spices', 'oranges','floor','pasta'
+    const [ingredients, setingredients] = useState([]);
     const [recipe, setRecipe] = useState('');
     const [showLoading, setShowLoading] = useState(false);
 
@@ -61,8 +61,9 @@ export const Main = () => {
                 <button>Add ingredient</button>
             </form>
             
-                { ingredients.length > 0 && 
-                    <IngredientList ingredients={ingredients}/>                    
+                { ingredients.length > 0 
+                    ?<IngredientList ingredients={ingredients}/>
+                    :<h3 className='section-title'>Add at least 4 Ingredients</h3>
                 }
                 
                 {

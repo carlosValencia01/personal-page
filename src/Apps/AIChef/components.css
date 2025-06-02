@@ -13,6 +13,7 @@ header{
     justify-content: center;
     gap: 12px;
     height: 38px;
+    width: 100%;
 }
 
 .add-ingredient-form > input {
@@ -82,4 +83,16 @@ main{
     line-height: 28px;
     font-size: 1.125rem;
     font-weight: 400;
+    width: 80%;
+}
+
+.section-title{
+    margin: auto;
+    margin-top: 25px;
+}
+
+.ingredient-list-container{
+    width: 80%;
+    margin:auto;
+    margin-top: 20px;
 }
