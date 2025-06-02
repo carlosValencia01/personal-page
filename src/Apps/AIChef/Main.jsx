@@ -6,13 +6,12 @@ import { getRecipeFromMistral } from './ai';
 import { Header } from './Header';
 
 export const Main = () => {
-
+    
     const [ingredients, setingredients] = useState(['chiken', 'spices', 'oranges','floor','pasta']);
     const [recipe, setRecipe] = useState('');
 
 
     async function handleGetRecipe(){
-        // setRecipeShown(prev => !prev);
         const aiRecipe = await getRecipeFromMistral(ingredients);
         setRecipe(aiRecipe);
     }

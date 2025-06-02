@@ -7,7 +7,7 @@ mention in your recipe. The jrecipe can include additional ingredients they did 
 not to include too many extra ingredients. Format your response in markdown to make it easier to
 render to a web page
 `
-const hf = new InferenceClient(process.env.REACT_APP_MY_TOKEN_HF);
+const hf = new InferenceClient(import.meta.env.VITE_MY_TOKEN_HF);
 
 export async function getRecipeFromMistral(ingredientsArr){
     const ingredientsString = ingredientsArr.join(", ");
