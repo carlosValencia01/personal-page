@@ -44,8 +44,14 @@ main{
     padding: 30px 30px 10px;
 }
 
+.main-container{
+    width: 100%;
+    border: none;
+    padding: 20px 40px;
+}
+
 .get-recipe-container{
-    margin-top: 20px;
+    margin: 30px 10px;
     background-color: whitesmoke;
     padding: 10px 20px;
     display: flex;

@@ -31,7 +31,7 @@ export const Main = () => {
     return (
         <>
         <Header/>
-        <main>
+        <main className='main-container'>
             <form className="add-ingredient-form" action={addIngredient}>
                 <input 
                     aria-label="Add Ingredient" 
