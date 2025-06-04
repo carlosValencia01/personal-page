@@ -8,6 +8,7 @@ import BlogPost from './Pages/Blogs/BlogPost.jsx'
 import { HomePage } from './Pages/Home/HomePage.jsx'
 import { Main } from './Apps/AIChef/Main.jsx';
 import { TenzieMain } from './Apps/Tenzies/TenzieMain.jsx'
+import { HangmanMain } from './Apps/HangMan/HangmanMain.jsx'
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/AIChefApp" element={<Main />} />
         <Route path="/tenzies" element={<TenzieMain />} />
+        <Route path="/hangman" element={<HangmanMain />} />
         {/* <AboutMe /> */}
       </Routes>
     </BrowserRouter>
