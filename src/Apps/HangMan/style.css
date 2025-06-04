@@ -64,6 +64,7 @@
 .hangman-languge-container > span{
     padding: 5px;
     border-radius: 6px;
+    position: relative;
 }
 
 .hangman-word-container{
@@ -75,7 +76,10 @@
 
 .hangman-word-container > span{
     border-bottom: 1px solid #fff;
-    padding: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
     text-transform: uppercase;
     background-color: #3e3e3e;
     /* margin-right: 3px; */
@@ -99,6 +103,15 @@
     border-radius: 3px;
 }
 
+.hangman-keyboard-container > button.correct{
+    background-color: green;
+}
+
+.hangman-keyboard-container > button.wrong{
+    background-color: red;
+}
+
+
 .hangman-newgame-button{
     width: 200px;
     padding: 10px;
@@ -107,4 +120,20 @@
     border-radius: 3px;
     margin: 0 auto;
     margin-block: 20px;
+}
+
+/* Dimmed overlay with skull on "lost" languages */
+.hangman-languge-container > span.lost::before {
+    content: "💀";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
 }
