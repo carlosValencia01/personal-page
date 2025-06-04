@@ -24,8 +24,7 @@ export const TenzieMain = () => {
     function generateAllNewDice(){
         return new Array(10).fill(0).map(x=> (
             {
-                // value: (Math.ceil(Math.random()*6)),
-                value: 5,
+                value: (Math.ceil(Math.random()*6)),
                 isHeld:false,
                 id: nanoid()
             }
@@ -55,16 +54,18 @@ export const TenzieMain = () => {
     
 
     return (
-        <main>
-            {gameWon && <Confetti width={width} height={height}/>}
-            <h2 className='title'>Tenzies</h2>
-            <p className='instructions'>Roll until all dice are the same. Click each die to freezee it at current value between rolls.</p>
-            <div className='die-container'>
-                {diceArray.map(dice => (
-                    <Die key={dice.id} value={dice.value} isHeld={dice.isHeld} hold={hold} id={dice.id}/>
-                ))}               
-            </div>
-            <button ref={buttonRef} onClick={handleRollDice} className='button-roll'>{gameWon ? 'New Game' : 'Roll Dice'}</button>
-        </main>
+        <div className='body-container'>
+            <main className='main-container'>
+                {gameWon && <Confetti width={width} height={height}/>}
+                <h2 className='title'>Tenzies</h2>
+                <p className='instructions'>Roll until all dice are the same. Click each die to freezee it at current value between rolls.</p>
+                <div className='die-container'>
+                    {diceArray.map(dice => (
+                        <Die key={dice.id} value={dice.value} isHeld={dice.isHeld} hold={hold} id={dice.id}/>
+                    ))}               
+                </div>
+                <button ref={buttonRef} onClick={handleRollDice} className='button-roll'>{gameWon ? 'New Game' : 'Roll Dice'}</button>
+            </main>
+        </div>
     )
 }
