@@ -18,7 +18,7 @@
     background-color: #000;
   }
 
-  .navbar {
+  .aboutme-navbar {
     position: sticky;
     top: 0;
     width: 100%;
@@ -29,13 +29,40 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .container {
+  .aboutme-navbar-container {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .aboutme-navbar-home{
+    /* background-color: red; */
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+    margin-inline: 10px;
+  }
+
+  .aboutme-navbar-centerItems{
+    font-size: 1.2rem;
+  }
+
+.lang-switch {
+    position: relative;
+    width: 80px;
+    height: 36px;
+    background-color: #ddd;
+    border-radius: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 14px;
+    user-select: none;
+    margin-inline: 10px;
   }
   
   .logo {
@@ -86,7 +113,7 @@
       right: 0;
       display: none;
     }
-    .navbar.active .nav-links {
+    .aboutme-navbar.active .nav-links {
       display: flex;
     }
     .content__about{       
@@ -103,20 +130,7 @@
 
   /* Slider */
   /* LanguageToggle.css */
-.lang-switch {
-    position: relative;
-    width: 80px;
-    height: 36px;
-    background-color: #ddd;
-    border-radius: 18px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    font-size: 14px;
-    user-select: none;
-  }
+
   
   .slider {
     position: absolute;
