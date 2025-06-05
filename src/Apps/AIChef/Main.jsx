@@ -50,7 +50,7 @@ export const Main = () => {
             :null
         }
 
-        <main className='main-container'>
+        <main className='iachefapp-main-container'>
             <form className="add-ingredient-form" action={addIngredient}>
                 <input 
                     aria-label="Add Ingredient" 

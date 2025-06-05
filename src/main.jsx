@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about-me' element={<AboutMe/>}/>
         <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/AIChefApp" element={<Main />} />
+        <Route path="/chefapp" element={<Main />} />
         <Route path="/tenzies" element={<TenzieMain />} />
         <Route path="/hangman" element={<HangmanMain />} />
         {/* <AboutMe /> */}

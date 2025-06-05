@@ -55,7 +55,7 @@ export const TenzieMain = () => {
 
     return (
         <div className='body-container'>
-            <main className='main-container'>
+            <main className='tenzies-main-container'>
                 {gameWon && <Confetti width={width} height={height}/>}
                 <h2 className='title'>Tenzies</h2>
                 <p className='instructions'>Roll until all dice are the same. Click each die to freezee it at current value between rolls.</p>
