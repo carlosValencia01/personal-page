@@ -16,7 +16,7 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     box-shadow: none;
 
 }
@@ -33,7 +33,7 @@
     color: #8e8e8e;
 }
 
-.hangman-status-section{
+.hangman-status-section-won{
     background-color: #10a95b;
     padding: 5px 0;
     border-radius: 5px;
@@ -41,16 +41,43 @@
     width: 80%;
     max-width: 500px;
     margin: 0 auto;
+    height: 100%;
+}
+
+
+.hangman-status-section-lost{
+    background-color: red;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.hangman-status-section-farewell{
+    background-color: cadetblue;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hangman-status-section-farewell > p {
+    margin: auto;
+}
+
+.hangman-status-container{
+    height: 120px;
     margin-block: 20px;
 }
 
-
-.hangman-status-section > h2{
-}
-
-.hangman-status-section > p{
-    
-}
 
 .hangman-languge-container{
     display: flex;
@@ -86,6 +113,10 @@
     font-size: 1.25rem;
 }
 
+.hangman-word-container > .hangman-letter-lost{
+    color: red;
+}
+
 .hangman-keyboard-container{
     display: flex;
     flex-wrap: wrap;
@@ -96,11 +127,13 @@
 }
 
 .hangman-keyboard-container > button{
-    padding: 10px;
+    width: 40px;
+    height: 40px;
     text-transform: uppercase;
     background-color: #fcba29;
     cursor: pointer;
     border-radius: 3px;
+    font-weight: bolder;
 }
 
 .hangman-keyboard-container > button.correct{
@@ -112,15 +145,7 @@
 }
 
 
-.hangman-newgame-button{
-    width: 200px;
-    padding: 10px;
-    background-color: #10a95b;
-    border: none;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-block: 20px;
-}
+
 
 /* Dimmed overlay with skull on "lost" languages */
 .hangman-languge-container > span.lost::before {
@@ -136,4 +161,20 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
+}
+
+.hangman-newgame-button-container{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.hangman-newgame-button{
+    width: 200px;
+    padding: 10px;
+    background-color: #10a95b;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-block: 20px;
 }

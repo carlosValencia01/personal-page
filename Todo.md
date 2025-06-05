@@ -1,4 +1,4 @@
-#about-me: fix style#
+#about-me: fix header style#
 
 #Add description and image to blogs.json#
 #Tenzies: add timer and roll counter#
