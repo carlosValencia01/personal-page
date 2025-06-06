@@ -34,7 +34,7 @@ const Carousel = ({ items = [] }) => {
             <img src={item.image} alt={item.title} />
             <div className="card-body">
               <h3>{item.title}</h3>
-              <p>{item.excerpt}</p>
+              <p className='card-excert'>{item.excerpt}</p>
               <a href={item.link} className="card-link">
                 Leer más →
               </a>

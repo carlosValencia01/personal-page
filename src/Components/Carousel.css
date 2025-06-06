@@ -8,9 +8,10 @@
 /* Wrapper con posición relativa para los botones */
 .carousel-wrapper {
   position: relative;
-  width: 100%;
+  width: 95%;
   overflow: hidden;
   padding: 2rem 0;
+  margin: 0 auto;
 }
 
 /* Contenedor de las cards con scroll horizontal */
@@ -54,10 +55,16 @@
 }
 
 .card-link {
-  margin-top: auto;
+  margin-top: 5px;
   color: #0077ff;
   font-weight: 600;
   text-decoration: none;
+}
+
+.card-excert{
+  height: 115px;
+  text-align: justify;
+  text-overflow: ellipsis;
 }
 
 .card-link:hover {
