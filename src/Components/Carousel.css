@@ -1,0 +1,103 @@
+/* variables opcionales */
+:root {
+  --card-width: 280px;
+  --card-gap: 1rem;
+  --btn-size: 40px;
+}
+
+/* Wrapper con posición relativa para los botones */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+/* Contenedor de las cards con scroll horizontal */
+.carousel-container {
+  display: flex;
+  gap: var(--card-gap);
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 var(--btn-size); /* deja espacio para los botones */
+}
+
+/* Ocultar scrollbar (WebKit) */
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card */
+.carousel-card {
+  flex: 0 0 var(--card-width);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: start;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-link {
+  margin-top: auto;
+  color: #0077ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* Botones */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--btn-size);
+  height: var(--btn-size);
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.25s;
+  z-index: 1;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-btn.prev {
+  left: 0.5rem;
+}
+
+.carousel-btn.next {
+  right: 0.5rem;
+}
+
+/* Responsive: las cards ocupan toda la pantalla en móviles */
+@media (max-width: 500px) {
+  :root {
+    --card-width: 80%;
+  }
+}
