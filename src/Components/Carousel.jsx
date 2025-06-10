@@ -36,7 +36,7 @@ const Carousel = ({ items = [] }) => {
               <h3>{item.title}</h3>
               <p className='card-excert'>{item.excerpt}</p>
               <a href={item.link} className="card-link">
-                Leer más →
+                Abrir →
               </a>
             </div>
           </article>
