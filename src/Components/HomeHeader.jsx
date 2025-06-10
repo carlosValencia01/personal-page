@@ -9,11 +9,11 @@ export const HomeHeader = () => {
     <header className="main-header">
       <div className="container">
         <div className="logo">
-          <a href="/">MiNombre.dev</a>
+          <a href="/">Carlos Valencia</a>
         </div>
 
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <a href="#about" onClick={() => setMenuOpen(false)}>Sobre mí</a>
+          <a href="/about-me" onClick={() => setMenuOpen(false)}>Sobre mí</a>
           <a href="#projects" onClick={() => setMenuOpen(false)}>Proyectos</a>
           <a href="#blog" onClick={() => setMenuOpen(false)}>Blog</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Contacto</a>
