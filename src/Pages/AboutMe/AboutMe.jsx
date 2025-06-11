@@ -53,7 +53,7 @@ export const AboutMe = () => {
                     </div>
 
                     <nav className='aboutme-navbar-centerItems'>                           
-                        <ul className="nav-links nav-links-container">                            
+                        <ul className="aboutme-nav-links aboutme-nav-links-container">                            
                             {/* <li><a href="#home">{t('navbar-home')}</a></li> */}
                             <li><a href="#about">{t('navbar-about')}</a></li>
                             <li><a href="#projects">{t('navbar-proyects')}</a></li>

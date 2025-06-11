@@ -70,20 +70,20 @@
     font-weight: bold;
   }
   
-  .nav-links {
+  .aboutme-nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
   }
   
-  .nav-links a {
+  .aboutme-nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
   }
   
-  .nav-links a:hover {
+  .aboutme-nav-links a:hover {
     color: #38bdf8; /* azul claro */
   }
   
@@ -103,7 +103,7 @@
 
   /* Opcional: navegación responsiva */
   @media (max-width: 768px) {
-    .nav-links {
+    .aboutme-nav-links {
       flex-direction: column;
       gap: 1rem;
       background-color: #1f2937;
@@ -113,7 +113,7 @@
       right: 0;
       display: none;
     }
-    .aboutme-navbar.active .nav-links {
+    .aboutme-navbar.active .aboutme-nav-links {
       display: flex;
     }
     .content__about{       
@@ -170,7 +170,7 @@
     box-shadow: 0 4px 8px 0 rgba(20, 39, 244, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.92);
   }
 
-  .nav-links-container{
+  .aboutme-nav-links-container{
 
   }
 
