@@ -28,3 +28,17 @@ main{
     text-decoration: none;
     color: white;
 }
+
+.homePage-blogs-container > h2{
+    width: 100%;
+}
+
+.homePage-blogs-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+}

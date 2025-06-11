@@ -5,4 +5,5 @@ add timer and roll counter#
 #iachefapp: add tokens for when run out of requests#
 #hangman: add floating button to return to home page#
 #HomeHeader: add current links#
-
+#Blog: change layout,
+    improve blog cards#

@@ -4,6 +4,7 @@ import { HomeHeader } from "../../Components/HomeHeader"
 import blogs from '../../Data/blogs.json';
 import './homepage.css'
 import {blogItems} from "./entries";
+import { BlogCard } from "../../Components/BlogCard";
 
 export const HomePage = () => {
 
@@ -11,18 +12,18 @@ export const HomePage = () => {
         <>
             <HomeHeader/>
             <main>
+                <h2>Últimos Artículos</h2>
                 <div>
-                    <h1>Últimos Artículos</h1>
                     <Carousel items={blogItems} />
                 </div>
-                {
-                    blogs.map((b)=>(
-                        <div key={b.id} className="card-container">
-                            <h3>{b.title}</h3>
-                            <button className="link-button"><a href={`/blog/${b.slug}`}>Ir a</a></button>
-                        </div>
-                    ))
-                }                
+                <h2>Blogs</h2>                
+                <div className="homePage-blogs-container" id="blog">
+                    {
+                        blogs.map((b)=>(
+                            <BlogCard key={b.id} blog={b}/>
+                        ))
+                    }
+                </div>            
             </main>
             <Footer/>
         </>
