@@ -50,10 +50,11 @@ body {
   padding: 1rem;
 }
 
-.main-content {
+.blog-main-content {
   grid-area: main;
   background-color: var(--bg-main);
-  padding: 1rem;
+  padding:0 20px;
+  width: 100%;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 

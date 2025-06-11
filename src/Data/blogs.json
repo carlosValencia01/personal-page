@@ -1,6 +1,65 @@
 [
-  {
+    {
     "id": 1,
+    "slug": "pilares-poo",
+    "title": "Los 4 pilares fundamentales de la POO",
+    "description": "La POO es un paradigma de programación que organiza el código en torno a objetos que representan entidades del mundo real o conceptual, Esta se basa en 4 pilares fundamentales.",
+    "author": "Carlos Valencia",
+    "date": "2025-06-11",
+    "tags": ["poo", "programacion", "fundamentos"],
+        "content": [
+      {
+        "subtitle": "Introducción",
+        "contenido": "¿Qué es la Programación Orientada a Objetos (POO)? \n La POO es un paradigma de programación que organiza el código en torno a objetos que representan entidades del mundo real o conceptual. Cada objeto contiene datos (atributos) y comportamiento (métodos). Este enfoque favorece la reutilización de código, la mantenibilidad y la escalabilidad. <br> <br>"
+      },
+      {
+        "subtitle": "Los 4 pilares fundamentales de la POO",
+        "contenido": "<hr> <br> <br>"
+      },
+      {
+        "subtitle": "1. 🧬 Abstracción",
+        "contenido": "Es el proceso de ocultar los detalles internos y mostrar solo lo necesario. Permite centrarse en \"qué hace un objeto\" en lugar de \"cómo lo hace\". <br> <br>"
+      },
+      {
+        "subtitle": "Ventajas de la abstracción:",
+        "contenido": "🟢Reducción de complejidad. <br>🟢Mayor claridad y enfoque en el comportamiento esencial.<br>🟢Fomenta el uso de interfaces o clases abstractas.<br> <br>"
+      },
+      {
+        "subtitle": "2. 🛡️ Encapsulamiento",
+        "contenido": "Es la práctica de ocultar los datos internos de un objeto y permitir el acceso solo a través de métodos públicos (getters/setters).<br> <br>"
+      },
+      {
+        "subtitle": "Ventajas del encapsulamiento:",
+        "contenido": "🟢Control del acceso a los datos. <br>🟢Mejora la seguridad. <br>🟢Reduce el acoplamiento.<br> <br>"
+      },
+      {
+        "subtitle": "3. 🧬 Herencia",
+        "contenido": "Es la capacidad de una clase de heredar propiedades y comportamientos de otra clase. Promueve la reutilización de código.<br> <br>"
+      },
+      {
+        "subtitle": "Ventajas de la herencia:",
+        "contenido": "🟢Reutilización de código. <br>🟢Organización jerárquica. <br>🟢Extensibilidad.<br> <br>"
+      },
+      {
+        "subtitle": "4. 🔄 Polimorfismo",
+        "contenido": "Es la capacidad de un objeto de adoptar múltiples formas. Es decir, una misma acción puede comportarse de manera diferente según el contexto.<br> <br>"
+      },
+      {
+        "subtitle": "Ventajas del polimorfismo:",
+        "contenido": "🟢Mayor flexibilidad.<br>🟢Código más limpio y reutilizable.<br>🟢Permite el uso de interfaces y clases base.<br> <br>"
+      },
+      {
+        "subtitle": "¿Por qué son importantes estos pilares?",
+        "contenido": "🟢Permiten diseñar software robusto, escalable y mantenible.<br>🟢Separan las responsabilidades y mejoran el principio de responsabilidad única.<br>🟢Hacen que el código sea más cercano a cómo pensamos los humanos en objetos y comportamientos.<br> <br>"
+      },
+      {
+        "subtitle": "Conclusión",
+        "contenido": "La POO sigue siendo clave en la ingeniería de software moderna, especialmente en lenguajes como C#, Java, Python, C++. Comprender profundamente estos pilares es esencial para cualquier desarrollador que busque escribir código limpio, sólido y orientado al cambio.<br> <br>"
+      }
+    ]
+  },
+  {
+    "id": 16,
     "slug": "introduccion-csharp",
     "title": "Introducción a C# para principiantes",
     "description": "Este es un ejemplo de una descripcion.",
