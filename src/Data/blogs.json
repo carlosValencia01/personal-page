@@ -58,276 +58,42 @@
       }
     ]
   },
-  {
-    "id": 16,
-    "slug": "introduccion-csharp",
-    "title": "Introducción a C# para principiantes",
-    "description": "Este es un ejemplo de una descripcion.",
-    "author": "Laura García",
-    "date": "2024-04-20",
-    "content": [
       {
-        "subtitle": "¿Qué es C#?",
-        "contenido": "C# es un lenguaje de programación moderno, orientado a objetos..."
-      },
-      {
-        "subtitle": "Historia y evolución",
-        "contenido": "Fue desarrollado por Microsoft como parte de su plataforma .NET..."
-      }
-    ],
-    "tags": ["csharp", "programacion", "principiantes","css"]
-  },
-  {
     "id": 2,
-    "slug": "arquitectura-solid",
-    "title": "Principios SOLID explicados",
-    "description": "Este es un ejemplo de una descripcion.",
-    "author": "Juan Pérez",
-    "date": "2024-05-10",
-    "content": [
+    "slug": "principios-solid",
+    "title": "Principios SOLID: Guía Completa",
+    "description": "Aquí tienes una guía completa y detallada sobre los Principios SOLID",
+    "author": "Carlos Valencia",
+    "date": "2025-06-13",
+    "tags": ["solid", "programacion", "fundamentos"],
+
+        "content": [
       {
-        "subtitle": "Este es un subtitulo",
-        "contenido": "SOLID es un acrónimo que significa..."
+        "subtitle": "¿Qué es SOLID?",
+        "contenido": "SOLID es un acrónimo que representa cinco principios fundamentales de la programación orientada a objetos, formulados por Robert C. Martin (conocido como “Uncle Bob”). Estos principios tienen como objetivo escribir código:<br> <ul><li>Más limpio</li>  <li>Mantenible</li> <li>Escalable</li> <li>Fácil de probar y extender</li></ul> <br> <br>"
       },
       {
-        "subtitle": "Este es otro subtitulo",
-        "contenido": "Este es otro contenido para la pagina de stock del blog"
+        "subtitle": "1. Single Responsibility Principle (SRP)",
+        "contenido": "“Una clase debe tener una única razón para cambiar.”<br><b>Definición</b><br> Cada clase o módulo debe encargarse de una única funcionalidad o responsabilidad. Si una clase tiene múltiples razones para cambiar, está haciendo más de lo que debería.<br>"
+      },{
+        "subtitle": "2. Open/Closed Principle (OCP)",
+        "contenido": "“Las entidades de software deben estar abiertas para extensión, pero cerradas para modificación.”<br><b>Definición</b><br>El comportamiento de una clase debe poder extenderse sin necesidad de modificar su código original.<br>"
+      },{
+        "subtitle": "3. Liskov Substitution Principle (LSP)",
+        "contenido": "“Los objetos de una clase derivada deben poder sustituir a los objetos de su clase base sin alterar el comportamiento esperado.”<br><b>Definición</b><br>Si una clase B hereda de A, debería poder usarse donde sea que se use A, sin errores ni comportamientos inesperados.<br>"
+      },{
+        "subtitle": "4. Interface Segregation Principle (ISP)",
+        "contenido": "“Ningún cliente debe verse obligado a depender de métodos que no utiliza.”<br><b>Definición</b><br>Las interfaces deben ser específicas y pequeñas, en lugar de contener métodos innecesarios para algunas clases.   <br>"
+      },{
+        "subtitle": "5. Dependency Inversion Principle (DIP)",
+        "contenido": "Los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deben depender de abstracciones.”<br><b>Definición</b><br> En lugar de que las clases dependan directamente de implementaciones concretas, deben depender de interfaces o abstracciones.<br>"
+      },{
+        "subtitle": "Beneficios de aplicar SOLID",
+        "contenido": "<ul><li>Código modular y reutilizable</li><li>Facilita el testing automatizado</li><li>Menor riesgo de bugs al modificar código</li><li>Mejora la colaboración en equipo</li><li>Escalabilidad y mantenimiento a largo lazo</li></ul>"
+      },{
+        "subtitle": "",
+        "contenido": "<br> <br>"
       }
-    ],
-    "tags": ["arquitectura", "SOLID", "poo","css"]
-  },
-  {
-    "id": 3,
-    "slug": "entity-framework-codefirst",
-    "title": "Entity Framework: Code First paso a paso",
-    "author": "Andrés Mora",
-    "date": "2024-06-01",
-    "content": [
-      {
-        "subtitle": "¿Qué es Code First?",
-        "contenido": "Code First permite definir la base de datos desde las clases del modelo..."
-      },
-      {
-        "subtitle": "Ventajas del enfoque",
-        "contenido": "Te da más control sobre el diseño de la base de datos desde el código..."
-      }
-    ],
-    "tags": ["ef", "database", "codefirst"]
-  },
-  {
-    "id": 4,
-    "slug": "desplegar-net-azure",
-    "title": "Cómo desplegar una app .NET en Azure",
-    "author": "María Torres",
-    "date": "2024-07-18",
-    "content": [
-      {
-        "subtitle": "Preparación del proyecto",
-        "contenido": "Antes de desplegar, asegúrate de tener una suscripción activa en Azure..."
-      },
-      {
-        "subtitle": "Usando Azure App Services",
-        "contenido": "Este servicio permite desplegar fácilmente aplicaciones web..."
-      }
-    ],
-    "tags": ["azure", "despliegue", "cloud"]
-  },
-  {
-    "id": 5,
-    "slug": "react-hooks-usos",
-    "title": "Hooks de React: Guía de uso",
-    "author": "Carlos Jiménez",
-    "date": "2024-03-15",
-    "content": [
-      {
-        "subtitle": "¿Qué son los hooks?",
-        "contenido": "Son funciones que permiten usar estado y otras características de React sin clases..."
-      },
-      {
-        "subtitle": "useState y useEffect",
-        "contenido": "Los más comunes y útiles en la mayoría de aplicaciones..."
-      }
-    ],
-    "tags": ["react", "frontend", "hooks"]
-  },
-  {
-    "id": 6,
-    "slug": "microservicios-dotnet",
-    "title": "Creando microservicios con .NET",
-    "author": "Ana López",
-    "date": "2024-08-10",
-    "content": [
-      {
-        "subtitle": "¿Qué es un microservicio?",
-        "contenido": "Una unidad pequeña y autónoma que cumple una función específica..."
-      },
-      {
-        "subtitle": "Implementación básica en .NET",
-        "contenido": "Se puede lograr usando Web API con controladores separados..."
-      }
-    ],
-    "tags": ["microservicios", "dotnet", "arquitectura"]
-  },
-  {
-    "id": 7,
-    "slug": "autenticacion-jwt",
-    "title": "Autenticación con JWT en aplicaciones web",
-    "author": "José Martínez",
-    "date": "2024-05-22",
-    "content": [
-      {
-        "subtitle": "¿Qué es JWT?",
-        "contenido": "JSON Web Token es un estándar abierto para autenticar usuarios..."
-      },
-      {
-        "subtitle": "Integración con .NET",
-        "contenido": "Puedes usar `Microsoft.AspNetCore.Authentication.JwtBearer`..."
-      }
-    ],
-    "tags": ["seguridad", "jwt", "autenticacion"]
-  },
-  {
-    "id": 8,
-    "slug": "linq-csharp",
-    "title": "Domina LINQ en C# con ejemplos",
-    "author": "Lucía Rojas",
-    "date": "2024-02-11",
-    "content": [
-      {
-        "subtitle": "Introducción a LINQ",
-        "contenido": "LINQ permite consultar colecciones de datos de forma declarativa..."
-      },
-      {
-        "subtitle": "Operaciones comunes",
-        "contenido": "Select, Where, OrderBy, GroupBy son fundamentales..."
-      }
-    ],
-    "tags": ["csharp", "linq", "datos"]
-  },
-  {
-    "id": 9,
-    "slug": "css-grid-layout",
-    "title": "Diseña con CSS Grid como un profesional",
-    "author": "Miguel Salazar",
-    "date": "2024-01-25",
-    "content": [
-      {
-        "subtitle": "¿Qué es CSS Grid?",
-        "contenido": "Es un sistema de diseño bidimensional para la web..."
-      },
-      {
-        "subtitle": "Ejemplo práctico",
-        "contenido": "Vamos a construir un layout clásico tipo blog usando Grid..."
-      }
-    ],
-    "tags": ["css", "layout", "frontend"]
-  },
-  {
-    "id": 10,
-    "slug": "clean-architecture",
-    "title": "Clean Architecture en proyectos reales",
-    "author": "Valentina Romero",
-    "date": "2024-09-12",
-    "content": [
-      {
-        "subtitle": "Capas de responsabilidad",
-        "contenido": "Separar lógica de negocio, presentación y acceso a datos es la clave..."
-      },
-      {
-        "subtitle": "Aplicación en .NET",
-        "contenido": "Puedes organizar tus carpetas siguiendo los principios de Robert C. Martin..."
-      }
-    ],
-    "tags": ["arquitectura", "cleanarchitecture", "dotnet"]
-  },
-  {
-    "id": 11,
-    "slug": "unit-testing-csharp",
-    "title": "Testing unitario en C# con xUnit",
-    "author": "Jorge Díaz",
-    "date": "2024-06-05",
-    "content": [
-      {
-        "subtitle": "¿Por qué testear?",
-        "contenido": "Los tests ayudan a detectar errores antes de producción..."
-      },
-      {
-        "subtitle": "Primer test con xUnit",
-        "contenido": "Crea una clase de test y usa [Fact] para definir una prueba..."
-      }
-    ],
-    "tags": ["testing", "csharp", "xunit"]
-  },
-  {
-    "id": 12,
-    "slug": "frontend-performance",
-    "title": "Optimiza el rendimiento de tu frontend",
-    "author": "Camila Vargas",
-    "date": "2024-07-01",
-    "content": [
-      {
-        "subtitle": "Cargas perezosas (lazy loading)",
-        "contenido": "Reduce el tiempo de carga inicial dividiendo el JS y las imágenes..."
-      },
-      {
-        "subtitle": "Uso correcto de imágenes",
-        "contenido": "Convierte tus imágenes a WebP y usa `srcset`..."
-      }
-    ],
-    "tags": ["rendimiento", "frontend", "optimización"]
-  },
-  {
-    "id": 13,
-    "slug": "middleware-aspnetcore",
-    "title": "Comprendiendo los middleware en ASP.NET Core",
-    "author": "Pedro Ramírez",
-    "date": "2024-03-30",
-    "content": [
-      {
-        "subtitle": "¿Qué es un middleware?",
-        "contenido": "Una función que se ejecuta en la canalización HTTP..."
-      },
-      {
-        "subtitle": "Creando tu propio middleware",
-        "contenido": "Implementa una clase con `InvokeAsync`..."
-      }
-    ],
-    "tags": ["aspnet", "middleware", "dotnet"]
-  },
-  {
-    "id": 14,
-    "slug": "typescript-intro",
-    "title": "TypeScript para desarrolladores JavaScript",
-    "author": "Natalia Méndez",
-    "date": "2024-08-18",
-    "content": [
-      {
-        "subtitle": "Ventajas de TypeScript",
-        "contenido": "Te permite detectar errores en tiempo de desarrollo..."
-      },
-      {
-        "subtitle": "Migración progresiva",
-        "contenido": "Puedes adoptar TS en partes usando archivos `.ts` y JSDoc..."
-      }
-    ],
-    "tags": ["typescript", "javascript", "frontend"]
-  },
-  {
-    "id": 15,
-    "slug": "graphql-vs-rest",
-    "title": "GraphQL vs REST: ¿Cuál elegir?",
-    "author": "Felipe Herrera",
-    "date": "2024-05-03",
-    "content": [
-      {
-        "subtitle": "Comparativa general",
-        "contenido": "REST usa endpoints fijos, GraphQL permite consultas personalizadas..."
-      },
-      {
-        "subtitle": "Casos de uso",
-        "contenido": "GraphQL es ideal cuando el cliente necesita diferentes datos cada vez..."
-      }
-    ],
-    "tags": ["api", "graphql", "rest"]
+    ]
   }
-]
+  ]
