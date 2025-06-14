@@ -70,29 +70,98 @@
         "content": [
       {
         "subtitle": "¿Qué es SOLID?",
-        "contenido": "SOLID es un acrónimo que representa cinco principios fundamentales de la programación orientada a objetos, formulados por Robert C. Martin (conocido como “Uncle Bob”). Estos principios tienen como objetivo escribir código:<br> <ul><li>Más limpio</li>  <li>Mantenible</li> <li>Escalable</li> <li>Fácil de probar y extender</li></ul> <br> <br>"
+        "contenido": "SOLID es un acrónimo que representa cinco principios fundamentales de la programación orientada a objetos, formulados por Robert C. Martin (conocido como “Uncle Bob”). Estos principios tienen como objetivo escribir código:<br> <ul><li>Más limpio</li>  <li>Mantenible</li> <li>Escalable</li> <li>Fácil de probar y extender</li></ul>"
       },
       {
         "subtitle": "1. Single Responsibility Principle (SRP)",
         "contenido": "“Una clase debe tener una única razón para cambiar.”<br><b>Definición</b><br> Cada clase o módulo debe encargarse de una única funcionalidad o responsabilidad. Si una clase tiene múltiples razones para cambiar, está haciendo más de lo que debería.<br>"
-      },{
+      },
+      {
+        "subtitle": "Ejemplo en C# (Violando SRP)",
+        "contenido": "<div class='codeSection'>public class Report<br>{<br>public string Title { get; set; }<br>public void GenerateReport() {* lógica de generación */ }<br>    public void SaveToFile() { /* lógica de guardado en disco */ }<br>}</div><br>Esta clase viola SRP porque maneja tanto la lógica del reporte como la persistencia."
+      }
+      ,
+      {
+        "subtitle": "Solución SRP",
+        "contenido": "<div class='codeSection'>public class Report<br>{<br>public string Title { get; set; }<br>public void GenerateReport() { /* <br>lógica de generación */ }<br>}<br>public class ReportSaver<br>{<br>public void SaveToFile(Report report) { /* guardar en disco */ }<br>}<br></div><br>"
+      }
+      ,{
         "subtitle": "2. Open/Closed Principle (OCP)",
         "contenido": "“Las entidades de software deben estar abiertas para extensión, pero cerradas para modificación.”<br><b>Definición</b><br>El comportamiento de una clase debe poder extenderse sin necesidad de modificar su código original.<br>"
-      },{
+      },            
+      {
+        "subtitle": "Ejemplo en C# (Violando OCP)",
+        "contenido": "<div class='codeSection'>public class DiscountCalculator<br>{<br>public double Calculate(string customerType)<br>{<br>        if (customerType == \"Regular\") return 0.1;<br>if (customerType == \"Premium\") return 0.2;<br>return 0;<br>}<br>}<br></div><br>Cada vez que se agregue un nuevo tipo de cliente, se debe modificar la clase."
+      }
+      ,
+      {
+        "subtitle": "Solución OCP aplicado (usando polimorfismo)",
+        "contenido": "<div class='codeSection'>public interface IDiscount<br>{<br>double GetDiscount();<br>}<br>public class RegularDiscount :IDiscount<br>{<br>public double GetDiscount() => 0.1;<br>}<br>public class PremiumDiscount : IDiscount<br>{<br>public double GetDiscount() => 0.2;<br>}<br><br>public class DiscountCalculator<br>{<br>public double Calculate(IDiscount discount) => discount.GetDiscount();<br>}<br></div><br>"
+      },
+      {
         "subtitle": "3. Liskov Substitution Principle (LSP)",
         "contenido": "“Los objetos de una clase derivada deben poder sustituir a los objetos de su clase base sin alterar el comportamiento esperado.”<br><b>Definición</b><br>Si una clase B hereda de A, debería poder usarse donde sea que se use A, sin errores ni comportamientos inesperados.<br>"
-      },{
+      },
+      
+      
+      
+      {
+        "subtitle": "Ejemplo en C# (Violando LSP)",
+        "contenido": "<div class='codeSection'>public class Bird<br>{<br>public virtual void Fly() { }<br>}<br>public class Ostrich : Bird<br>{<br>  public override void Fly() => throw new NotImplementedException(); // Las avestruces no vuelan<br>}<br></div>Si usamos Ostrich como un Bird, provocará errores."
+      }
+      ,
+      {
+        "subtitle": "Solución LSP",
+        "contenido": "<div class='codeSection'>public abstract class Bird { }<br>public interface IFlyable<br>{<br>void Fly();<br>}<br>public class Sparrow : Bird, IFlyable<br>{<br> public void Fly() { /* lógica de vuelo */ }<br>}<br>public class Ostrich : Bird<br>{<br>// No implementa IFlyable<br>}<br></div>"
+      },
+      
+      
+      
+      
+      
+      {
         "subtitle": "4. Interface Segregation Principle (ISP)",
         "contenido": "“Ningún cliente debe verse obligado a depender de métodos que no utiliza.”<br><b>Definición</b><br>Las interfaces deben ser específicas y pequeñas, en lugar de contener métodos innecesarios para algunas clases.   <br>"
-      },{
+      },
+      
+      
+      
+      {
+        "subtitle": "Ejemplo en C# Violación del principio",
+        "contenido": "<div class='codeSection'>public interface IWorker<br>{<br>    void Work();<br>    void Eat();<br>}<br><br>public class Robot : IWorker<br>{<br>    public void Work() { }<br>    public void Eat() { throw new NotImplementedException(); } // Un robot no come<br>}<br></div>"
+      }
+      ,
+      {
+        "subtitle": "Solución aplicando ISP ",
+        "contenido": "<div class='codeSection'>public interface IWorkable<br>{<br>    void Work();<br>}<br><br>public interface IFeedable<br>{<br>    void Eat();<br>}<br><br>public class Robot : IWorkable<br>{<br>    public void Work() { }<br>}<br><br>public class Human : IWorkable, IFeedable<br>{<br>    public void Work() { }<br>    public void Eat() { }<br>}<br></div>"
+      },
+      
+      
+      
+      
+      
+      {
         "subtitle": "5. Dependency Inversion Principle (DIP)",
         "contenido": "Los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deben depender de abstracciones.”<br><b>Definición</b><br> En lugar de que las clases dependan directamente de implementaciones concretas, deben depender de interfaces o abstracciones.<br>"
-      },{
+      },
+      
+      
+      
+      {
+        "subtitle": "Ejemplo en C# Violación del principio",
+        "contenido": "<div class='codeSection'>public class MySQLDatabase<br>{<br>    public void SaveData(string data) { }<br>}<br><br>public class DataService<br>{<br>    private MySQLDatabase db = new MySQLDatabase();<br>    public void Save(string data) => db.SaveData(data);<br>}<br></div><br>DataService está acoplado a una implementación concreta."
+      }
+      ,
+      {
+        "subtitle": "Solución Aplicación de DIP",
+        "contenido": "<div class='codeSection'>public interface IDatabase<br>{<br>    void SaveData(string data);<br>}<br><br>public class MySQLDatabase : IDatabase<br>{<br>    public void SaveData(string data) { }<br>}<br><br>public class DataService<br>{<br>    private readonly IDatabase _database;<br><br>    public DataService(IDatabase database)<br>    {<br>        _database = database;<br>    }<br><br>    public void Save(string data) => _database.SaveData(data);<br>}<br></div><br>Ahora DataService puede trabajar con cualquier base de datos que implemente IDatabase."
+      },
+
+      
+      
+      {
         "subtitle": "Beneficios de aplicar SOLID",
-        "contenido": "<ul><li>Código modular y reutilizable</li><li>Facilita el testing automatizado</li><li>Menor riesgo de bugs al modificar código</li><li>Mejora la colaboración en equipo</li><li>Escalabilidad y mantenimiento a largo lazo</li></ul>"
-      },{
-        "subtitle": "",
-        "contenido": "<br> <br>"
+        "contenido": "<ul><li>Código modular y reutilizable</li><li>Facilita el testing automatizado</li><li>Menor riesgo de bugs al modificar código</li><li>Mejora la colaboración en equipo</li><li>Escalabilidad y mantenimiento a largo lazo</li></ul><br><br>"
       }
     ]
   }

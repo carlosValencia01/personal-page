@@ -48,6 +48,7 @@ body {
   grid-area: nav;
   background-color: var(--bg-nav);
   padding: 1rem;
+  padding-left: 1.75rem;
 }
 
 .blog-main-content {
@@ -58,10 +59,30 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
+.blogcontent-p > ul{
+  padding-left: 2rem;
+}
+
+.blogcontent-p{
+  margin-left: 1rem;
+}
+
+.blogcontent-block{
+  margin-top: 15px;
+}
+
+.blogcontent-title{}
+
 .sidebar-right {
   grid-area: aside;
   background-color: var(--bg-aside);
   padding: 1rem;
+  padding-left: 1.75rem;
+}
+
+.sidebar-right > h2{
+  justify-content: center;
+  margin: auto;
 }
 
 .footer {
@@ -70,6 +91,15 @@ body {
   color: white;
   padding: 1rem;
   text-align: center;
+}
+
+.codeSection{
+  color: white;
+  background-color: rgb(39, 44, 63);
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 5px;
 }
 
 /* Responsivo */

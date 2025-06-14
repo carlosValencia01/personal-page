@@ -78,8 +78,8 @@ function BlogPost() {
             <div className="prose">
               
               {blog.content.map((x)=>(
-                <div key={x.subtitle} id={x.subtitle}>
-                  <h2>{x.subtitle}</h2>
+                <div className='blogcontent-block' key={x.subtitle} id={x.subtitle}>
+                  <h2 className='blogcontent-title'>{x.subtitle}</h2>
                   {/* <p className='blogcontent-p'>{x.contenido}</p>*/}
                   <p className='blogcontent-p' dangerouslySetInnerHTML={{ __html: x.contenido }}></p>                  
                 </div>
@@ -89,8 +89,7 @@ function BlogPost() {
          </div>
       </main>
       <aside className="sidebar-right">
-        <h2>Barra lateral</h2>
-        <h3>Similar Blogs</h3>
+        <h2>También te podría interesar:</h2>
         <ul>
           {
             suggestedList.map((x)=>(
