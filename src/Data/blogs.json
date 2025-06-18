@@ -58,7 +58,7 @@
       }
     ]
   },
-      {
+  {
     "id": 2,
     "slug": "principios-solid",
     "title": "Principios SOLID: Guía Completa",
@@ -66,7 +66,6 @@
     "author": "Carlos Valencia",
     "date": "2025-06-13",
     "tags": ["solid", "programacion", "fundamentos"],
-
         "content": [
       {
         "subtitle": "¿Qué es SOLID?",
@@ -155,14 +154,73 @@
       {
         "subtitle": "Solución Aplicación de DIP",
         "contenido": "<div class='codeSection'>public interface IDatabase<br>{<br>    void SaveData(string data);<br>}<br><br>public class MySQLDatabase : IDatabase<br>{<br>    public void SaveData(string data) { }<br>}<br><br>public class DataService<br>{<br>    private readonly IDatabase _database;<br><br>    public DataService(IDatabase database)<br>    {<br>        _database = database;<br>    }<br><br>    public void Save(string data) => _database.SaveData(data);<br>}<br></div><br>Ahora DataService puede trabajar con cualquier base de datos que implemente IDatabase."
-      },
-
-      
-      
+      },            
       {
         "subtitle": "Beneficios de aplicar SOLID",
         "contenido": "<ul><li>Código modular y reutilizable</li><li>Facilita el testing automatizado</li><li>Menor riesgo de bugs al modificar código</li><li>Mejora la colaboración en equipo</li><li>Escalabilidad y mantenimiento a largo lazo</li></ul><br><br>"
       }
+    ]
+  },
+    {
+    "id": 3,
+    "slug": "refactorizacion-explicacion",
+    "title": "¿Qué es refactorizar y para qué sirve?",
+    "description": "En este blog te explicare que es la refactorización y como la podemos aplicar a nuestro código.",
+    "author": "Carlos Valencia",
+    "date": "2025-06-17",
+    "tags": ["refactorizacion", "programacion", "buenas practicas"],
+    "content": [
+      {
+        "subtitle": "¿Que es la refactorización?",
+        "contenido": "\"Refactorizar es mejorar la estructura interna del código sin cambiar su comportamiento externo.\" <br>La refactorización de código, o refactoring, es el proceso de reestructurar el código fuente de un programa sin cambiar su comportamiento externo, con el objetivo de mejorar la legibilidad, mantenibilidad y eficiencia del mismo. En otras palabras, se trata de modificar el código internamente para hacerlo más fácil de entender, modificar y ampliar, sin afectar a la funcionalidad del programa."
+      },
+
+      {
+        "subtitle": "¿Por qué es importante la refactorización",
+        "contenido": "<ul><li>Mejora la calidad del código:</li>Al hacer que el código sea más legible y fácil de entender, los desarrolladores pueden identificar errores y problemas más fácilmente. <li>Facilita la mantención:</li>Un código bien refactorizado es más fácil de mantener y actualizar, lo que reduce el tiempo y los costos asociados.<li>Permite agregar nuevas funcionalidades:</li>Al hacer que el código sea más modular y reutilizable, es más fácil agregar nuevas funcionalidades sin tener que modificar grandes partes del código existente.<li>Aumenta la productividad de los desarrolladores:</li>El código refactorizado es más fácil de trabajar, lo que aumenta la productividad de los desarrolladores. <li>Reducir la deuda técnica:</li>La refactorización ayuda a abordar la deuda técnica, es decir, el código que ha sido escrito sin seguir las mejores prácticas y que eventualmente puede generar problemas.</ul>"
+      },
+
+      {
+        "subtitle": "Señales de \"mal diseño\" en JS:",
+        "contenido": "<ul><li>Código duplicado</li><li>Funciones muy largas</li><li>Nombres poco descriptivos</li><li>Exceso de responsabilidad en una sola función</li><li>Acoplamiento fuerte</li><li>Código difícil de testear</li></ul>"
+      },
+      {
+        "subtitle": "Ejemplos prácticos de refactorización",
+        "contenido": ""
+      },
+
+
+      {
+        "subtitle": "Ejemplo 1: Función con responsabilidades mezcladas",
+        "contenido": "Código original (antipatrón)<br><div class='codeSection'><pre>function handleUser(data) {</br>&#x09;const name = data.name;</br>&#x09;const age = data.age;</br>&#x09;if (age < 18) {</br>&#x09;&#x09;console.log(\"Usuario menor de edad\");</br>&#x09;} else {</br>&#x09;&#x09;console.log(\"Usuario mayor de edad\");</br>&#x09;}</br></br>&#x09;sendToServer(data);</br>}</br></br>function sendToServer(data) {</br>&#x09;fetch(\"/api/users\", {</br>&#x09;&#x09;method: \"POST\",</br>&#x09;&#x09;body: JSON.stringify(data)</br>&#x09;});</br>}</br></pre></div>Problemas:<br><ul><li>handleUser tiene responsabilidades múltiples: validación y envío.</li><li>Difícil de testear por estar todo mezclado.</li></ul>"
+      },
+      
+      {
+        "subtitle": "Ejemplo 1: Refactorizado (mejor diseño)",
+        "contenido": "<div class='codeSection'><pre>function isMinor(age) {</br>&#x09;return age < 18;</br>}</br></br>function logUserAgeStatus(age) {</br>&#x09;const message = isMinor(age) ? \"Usuario menor de edad\" : \"Usuario mayor de edad\";</br>&#x09;console.log(message);</br>}</br></br>function sendToServer(data) {</br>&#x09;fetch(\"/api/users\", {</br>&#x09;&#x09;method: \"POST\",</br>&#x09;&#x09;body: JSON.stringify(data)</br>&#x09;});</br>}</br></br>function handleUser(data) {</br>&#x09;logUserAgeStatus(data.age);</br>&#x09;sendToServer(data);</br>}</br></pre></div>Beneficios:<ul><li>Más legible</li><li>Separación clara de responsabilidades (SRP)</li><li>Fácil de testear cada parte</li></ul>"
+      },            
+      {
+        "subtitle": "Ejemplo 2: Código duplicado",
+        "contenido": "Código original (antipatrón) <div class='codeSection'><pre>function getUserAdmin(id) {</br>&#x09;return fetch(`/api/admins/${id}`).then(res => res.json());</br>}</br></br>function getUserClient(id) {</br>&#x09;return fetch(`/api/clients/${id}`).then(res => res.json());</br>}</br></pre></div> Problema: </br>Duplicación de lógica, solo cambia la ruta."
+      },
+
+
+      {
+        "subtitle": "Ejemplo 2: Refactorizado:",
+        "contenido": "<div class='codeSection'><pre>function getUserByType(id, type) {</br>&#x09;return fetch(`/api/${type}/${id}`).then(res => res.json());</br>}</br></br>// Uso</br>getUserByType(1, \"admins\");</br>getUserByType(2, \"clients\");</br></pre></div>Beneficio:<ul><li>Código DRY (Don’t Repeat Yourself)</li><li>Más escalable</li></ul>"
+      },      
+      {
+        "subtitle": "Ejemplo 3: Nombres malos y código \"mágico\"",
+        "contenido": "Código original (antipatrón)<div class='codeSection'><pre>function d(u) {<br>&#x09;return u.l === 1 ? \"activo\" : \"inactivo\";<br>}<br></pre></div>Problema:<ul><li>Nombres no descriptivos</li><li>Números mágicos</li></ul>"
+      },
+      {
+        "subtitle": "Ejemplo 3: Refactorizado:",
+        "contenido": "<div class='codeSection'><pre>function getUserStatus(user) {</br>&#x09;const STATUS_ACTIVE = 1;</br>&#x09;return user.level === STATUS_ACTIVE ? \"activo\" : \"inactivo\";</br>}</br></pre></div> Mejora:<ul><li>Lectura clara</li><li>Reutilizable</li></ul>"
+      },      
+      {
+        "subtitle": "Principios clave de refactorización",
+        "contenido": "<table><tr><th>Principio</th><th>Aplicación</th></tr><tr><td>SRP (Single Responsibility)</td><td>Divide funciones con más de una tarea</td></tr><tr><td>DRY (Don’t Repeat Yourself)</td><td>Evita duplicación de código</td></tr><tr><td>KISS (Keep It Simple)</td><td>Prefiere la solución más simple posible</td></tr><tr><td>YAGNI (You Aren’t Gonna Need It)</td><td>No agregues funcionalidades innecesarias</td></tr><tr><td>Nombres descriptivos</td><td>Usa nombres claros para funciones y variables</td></tr></table> </br></br> "
+      }                                                    
     ]
   }
   ]
