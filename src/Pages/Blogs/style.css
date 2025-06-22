@@ -135,6 +135,12 @@ body {
       background-color: #f0f8ff;
     }
 
+    .blog-image{
+      width: 80%;
+      border-radius: 6px;
+      margin: auto;
+    }
+
 
 /* Responsivo */
 @media (max-width: 768px) {

@@ -222,5 +222,56 @@
         "contenido": "<table><tr><th>Principio</th><th>Aplicación</th></tr><tr><td>SRP (Single Responsibility)</td><td>Divide funciones con más de una tarea</td></tr><tr><td>DRY (Don’t Repeat Yourself)</td><td>Evita duplicación de código</td></tr><tr><td>KISS (Keep It Simple)</td><td>Prefiere la solución más simple posible</td></tr><tr><td>YAGNI (You Aren’t Gonna Need It)</td><td>No agregues funcionalidades innecesarias</td></tr><tr><td>Nombres descriptivos</td><td>Usa nombres claros para funciones y variables</td></tr></table> </br></br> "
       }                                                    
     ]
+  },
+    {
+    "id": 4,
+    "slug": "composition-patern",
+    "title": "Composition Pattern en React",
+    "description": "¿Qué pasaría si viéramos la programación como un juego de bloques LEGO? Pues el patrón de composición es básicamente la respuesta a esta pregunta.",
+    "author": "Carlos Valencia",
+    "date": "2025-06-22",
+    "tags": ["patrones", "programacion", "buenas practicas"],
+    "content": [
+      {
+        "subtitle": "¿Qué es el Composition Pattern en React?",
+        "contenido": "El Composition Pattern se basa en la idea de construir componentes complejos a partir de otros más simples, como si fueran bloques LEGO.</br>En lugar de heredar comportamiento (como en la herencia clásica de POO), en React componemos componentes </br>"
+      },
+      {
+        "subtitle": "Concepto clave: children",
+        "contenido": "Ejemplo simple</br><img class='blog-image' src=\"https://i.imgur.com/kBTPXbx.jpg\" alt=\"\" /></br>¿Qué pasó aquí?</br><ul><li>Card es un componente genérico que no sabe qué va a renderizar.</li><li>Todo lo que se pasa entre <`Card`>...<`/Card`> se accede con props.children.</li><li>Esto permite máxima reutilización y flexibilidad.</li></ul></ul>"
+      },
+      {
+        "subtitle": "Variaciones del Composition Pattern",
+        "contenido": ""
+      },
+      {
+        "subtitle": "1. Slot pattern con props.children (estructura libre)",
+        "contenido": "<img class='blog-image' src=\"https://i.imgur.com/kCplTds.jpeg\" alt=\"\" /> </br>Ideal cuando no te importa el orden o los tipos de hijos, solo que se compongan en un contenedor."
+      },
+      {
+        "subtitle": "2. Named slots con props personalizadas",
+        "contenido": "Permite más control que children.</br> <img class='blog-image' src=\"https://i.imgur.com/BBM7EzO.jpeg\" alt=\"\" /></br> Útil cuando quieres separar secciones lógicas de un componente sin imponer diseño rígido."
+      },
+      {
+        "subtitle": "3. Render Props (funciones como hijos)",
+        "contenido": "Patrón más avanzado, permite compartir lógica.</br><img class='blog-image' src=\"https://i.imgur.com/So9qnGu.jpeg\" alt=\"\" /></br> Ideal cuando quieres compartir lógica pero delegar la UI al componente consumidor."
+      },            
+      {
+        "subtitle": "4. Composición con Componentes Hijos Especiales (Component Injection)",
+        "contenido": "<img class='blog-image' src=\"https://i.imgur.com/GWpshLS.jpeg\" alt=\"\" /></br>Muy útil en bibliotecas de UI como Chakra UI, Material UI, etc."
+      },
+      {
+        "subtitle": "¿Por qué usar Composition Pattern?",
+        "contenido": "<table><tr><th>Ventaja</th><th>Explicación</th></tr><tr><td>Reutilización</td><td>Evitas duplicar lógica/estructura</td></tr><tr><td>Claridad semántica</td><td>Separas claramente estructura y contenido</td></tr><tr><td>Testeabilidad</td><td>Componentes pequeños son más fáciles de probar</td></tr><tr><td>Flexibilidad</td><td>Puedes inyectar diferentes contenidos fácilmente</td></tr><tr><td>Menos acoplamiento</td><td>Componentes no dependen del contenido que reciben</td></tr></table>"
+      },      
+      {
+        "subtitle": "Cuándo no usarlo (o usar con cuidado)",
+        "contenido": "<ul><li>Si necesitas control rígido de estructura → preferir componentes más específicos.</li><li>Si tus props se vuelven demasiado complejas → podrías necesitar simplificar.</li><li>No abuses del pattern sin necesidad: la composición debe clarificar, no complicar.</li></ul>"
+      },
+      {
+        "subtitle": "Conclusión",
+        "contenido": "El Composition Pattern en React te permite escribir componentes modulares, reusables y altamente mantenibles. Es preferible a la herencia y te da el poder de construir interfaces complejas con piezas simples y desacopladas.</br></br>"
+      }                                                   
+    ]
   }
   ]
